@@ -34,6 +34,9 @@ $ sh scripts/setup.sh
 <!--Type passphrase again:-->
 <!--```-->
 
+### ファイル作成
+[こいつ](https://qiita.com/YKEI_mrn/items/d1f79ceddf6e009fdcd0)使って、ファイル自動生成して管理してみたい
+
 ### タスク管理
 GitHub Projectを使って開発タスクの管理を行なっています。<br>
 ht-swear > Projects > Tasks で管理する <br>
