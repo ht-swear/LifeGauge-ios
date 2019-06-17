@@ -1,0 +1,37 @@
+### Headers settings
+company: ht-swear
+
+### Xcode project settings
+project_name: LifeGauge-ios
+prefix: 
+xcodeproj_path: LifeGauge.xcodeproj
+
+### Code generation settings section
+# The main project target name
+project_target: LifeGauge
+
+# The file path for new modules
+project_file_path: LifeGauge/Modules
+
+# The Xcode group path to new modules
+project_group_path: LifeGauge/Modules
+
+### Tests generation settings section
+# The tests target name
+test_target: LifeGauge
+
+# The file path for new tests
+test_file_path: LifeGauge/Tests
+
+# The Xcode group path to new tests
+test_group_path: LifeGauge/Tests
+
+### Dependencies settings section
+podfile_path: 
+cartfile_path: 
+
+### Templates
+templates:
+- {name: rviper_controller}
+- {name: mvvm_controller}
+- {name: swifty_viper}
