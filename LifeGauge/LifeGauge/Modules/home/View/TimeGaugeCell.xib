@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="TimeGaugeCell" customModule="LifeGauge" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="270" height="127"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="270" height="127"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="2Xf-wD-NDP">
+                        <rect key="frame" x="0.0" y="0.0" width="270" height="191"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YEl-qA-rPn">
+                                <rect key="frame" x="0.0" y="0.0" width="270" height="37"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bda-du-Sgh">
+                                        <rect key="frame" x="114" y="8" width="42" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="ciw-hC-l0o"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="bda-du-Sgh" firstAttribute="top" secondItem="YEl-qA-rPn" secondAttribute="top" constant="8" id="0j5-p0-Gn9"/>
+                                    <constraint firstAttribute="bottom" secondItem="bda-du-Sgh" secondAttribute="bottom" constant="8" id="Z9G-qG-hhj"/>
+                                    <constraint firstItem="bda-du-Sgh" firstAttribute="centerX" secondItem="YEl-qA-rPn" secondAttribute="centerX" id="mhr-2y-OC8"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GsF-pu-yFx">
+                                <rect key="frame" x="0.0" y="37" width="270" height="90"/>
+                                <subviews>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Rcn-HF-VGv">
+                                        <rect key="frame" x="6" y="30" width="258" height="31"/>
+                                    </slider>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="Rcn-HF-VGv" firstAttribute="leading" secondItem="GsF-pu-yFx" secondAttribute="leading" constant="8" id="3ov-tA-zUC"/>
+                                    <constraint firstItem="Rcn-HF-VGv" firstAttribute="centerY" secondItem="GsF-pu-yFx" secondAttribute="centerY" id="c3z-tz-HpR"/>
+                                    <constraint firstAttribute="trailing" secondItem="Rcn-HF-VGv" secondAttribute="trailing" constant="8" id="tDU-3r-Glm"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                    </stackView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="2Xf-wD-NDP" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="TbP-JR-PUr"/>
+                <constraint firstAttribute="trailing" secondItem="2Xf-wD-NDP" secondAttribute="trailing" id="U8b-PG-B5T"/>
+                <constraint firstAttribute="bottom" secondItem="2Xf-wD-NDP" secondAttribute="bottom" id="Xyp-AB-EQI"/>
+                <constraint firstItem="2Xf-wD-NDP" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="eyn-1g-NnP"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="270" height="127"/>
+            <connections>
+                <outlet property="gaugeLabel" destination="bda-du-Sgh" id="pxr-3j-REF"/>
+                <outlet property="gaugeSlider" destination="Rcn-HF-VGv" id="jcr-of-XUa"/>
+            </connections>
+            <point key="canvasLocation" x="297.10144927536237" y="147.65625"/>
+        </collectionViewCell>
+    </objects>
+</document>
