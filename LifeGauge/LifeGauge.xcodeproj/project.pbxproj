@@ -15,26 +15,9 @@
 		4930C25822B7566B00DE2162 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4930C25622B7566B00DE2162 /* LaunchScreen.storyboard */; };
 		4930C26322B7566C00DE2162 /* LifeGaugeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4930C26222B7566C00DE2162 /* LifeGaugeTests.swift */; };
 		4930C26E22B7566C00DE2162 /* LifeGaugeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4930C26D22B7566C00DE2162 /* LifeGaugeUITests.swift */; };
+		49DA776622BBEDBC00E32A9D /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DA776522BBEDBC00E32A9D /* R.generated.swift */; };
 		6706184109770734DB36748B /* Pods_LifeGaugeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA4309DE900C503D87DA6A25 /* Pods_LifeGaugeTests.framework */; };
 		A488D6E519A5D29F078B050F /* Pods_LifeGaugeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1958CDB82FB22E8B54DCD864 /* Pods_LifeGaugeUITests.framework */; };
-		CF55413122B8927C00242B31 /* home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF55413022B8927C00242B31 /* home.storyboard */; };
-		CF7CB27822B8AF6E0075A83C /* homeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FEA2E46FCF4AD08661D5BA /* homeViewController.swift */; };
-		CF7CB27922B8AF980075A83C /* homeViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E1AB70C4C4DB2B0CB954F9 /* homeViewInput.swift */; };
-		CF7CB27A22B8AF980075A83C /* homeViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5580BC4C65A7F26BCF5C74D /* homeViewOutput.swift */; };
-		CF7CB27B22B8AF9E0075A83C /* homeModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC21697456FD01988D6A34CD /* homeModuleInput.swift */; };
-		CF7CB27C22B8AF9E0075A83C /* homePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFC4EF55D1E03F875844F85 /* homePresenter.swift */; };
-		CF7CB27D22B8AFA30075A83C /* homeInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F37179D083F1B6A4CC876C6 /* homeInteractorInput.swift */; };
-		CF7CB27E22B8AFA30075A83C /* homeInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417214E78C5B26784D27DFE3 /* homeInteractorOutput.swift */; };
-		CF7CB27F22B8AFA30075A83C /* homeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB226A340FAF00A04CB1657 /* homeInteractor.swift */; };
-		CF7CB28022B8AFA90075A83C /* homeRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34DBD5CD22B4695747235BD /* homeRouterInput.swift */; };
-		CF7CB28122B8AFA90075A83C /* homeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD998369D343A3D79E0C5C2F /* homeRouter.swift */; };
-		CF7CB28222B8AFAF0075A83C /* homeConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3C2C2BF70D72C92D03A54E /* homeConfigurator.swift */; };
-		CF7CB28322B8AFAF0075A83C /* homeInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C7D4BD7DB8389CA5E5BE32 /* homeInitializer.swift */; };
-		CF7CB28622B8B1110075A83C /* TimeGauge.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7CB28522B8B1110075A83C /* TimeGauge.swift */; };
-		CF7CB28822B9F5970075A83C /* RootRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7CB28722B9F5970075A83C /* RootRouter.swift */; };
-		CFA7954E22BA391F00C55FFB /* TimeGaugeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA7954C22BA391F00C55FFB /* TimeGaugeCell.swift */; };
-		CFA7954F22BA391F00C55FFB /* TimeGaugeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CFA7954D22BA391F00C55FFB /* TimeGaugeCell.xib */; };
-		CFA7955122BB232A00C55FFB /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA7955022BB232A00C55FFB /* Util.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,16 +38,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0D3C2C2BF70D72C92D03A54E /* homeConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = homeConfigurator.swift; path = home/Configurator/homeConfigurator.swift; sourceTree = "<group>"; };
-		0F37179D083F1B6A4CC876C6 /* homeInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = homeInteractorInput.swift; path = home/Interactor/homeInteractorInput.swift; sourceTree = "<group>"; };
 		1958CDB82FB22E8B54DCD864 /* Pods_LifeGaugeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LifeGaugeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		19A6A13E8CC5C3C33FCB9584 /* Pods_LifeGauge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LifeGauge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		215D6DBAAE4B92524B9FFD07 /* Pods-LifeGaugeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LifeGaugeTests.debug.xcconfig"; path = "Target Support Files/Pods-LifeGaugeTests/Pods-LifeGaugeTests.debug.xcconfig"; sourceTree = "<group>"; };
-		29B4590FADDEFB4AC6B1CB71 /* homeConfiguratorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = homeConfiguratorTests.swift; path = home/Configurator/homeConfiguratorTests.swift; sourceTree = "<group>"; };
-		31C7D4BD7DB8389CA5E5BE32 /* homeInitializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = homeInitializer.swift; path = home/Configurator/homeInitializer.swift; sourceTree = "<group>"; };
-		417214E78C5B26784D27DFE3 /* homeInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = homeInteractorOutput.swift; path = home/Interactor/homeInteractorOutput.swift; sourceTree = "<group>"; };
 		417AE76E5D3131AA7E9BD340 /* Pods-LifeGauge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LifeGauge.debug.xcconfig"; path = "Target Support Files/Pods-LifeGauge/Pods-LifeGauge.debug.xcconfig"; sourceTree = "<group>"; };
-		4414737413464D8B8B4474A1 /* homeRouterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = homeRouterTests.swift; path = home/Router/homeRouterTests.swift; sourceTree = "<group>"; };
 		4930C24A22B7566300DE2162 /* LifeGauge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LifeGauge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4930C24D22B7566300DE2162 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4930C24F22B7566300DE2162 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -78,28 +55,12 @@
 		4930C26922B7566C00DE2162 /* LifeGaugeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LifeGaugeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4930C26D22B7566C00DE2162 /* LifeGaugeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeGaugeUITests.swift; sourceTree = "<group>"; };
 		4930C26F22B7566C00DE2162 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4AB226A340FAF00A04CB1657 /* homeInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = homeInteractor.swift; path = home/Interactor/homeInteractor.swift; sourceTree = "<group>"; };
-		5FB32A73ACCF49C7680D2691 /* homeInteractorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = homeInteractorTests.swift; path = home/Interactor/homeInteractorTests.swift; sourceTree = "<group>"; };
-		67E1AB70C4C4DB2B0CB954F9 /* homeViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = homeViewInput.swift; path = home/View/homeViewInput.swift; sourceTree = "<group>"; };
+		49DA776522BBEDBC00E32A9D /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		72FC52114F7AD8F5C6ACB753 /* Pods-LifeGaugeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LifeGaugeTests.release.xcconfig"; path = "Target Support Files/Pods-LifeGaugeTests/Pods-LifeGaugeTests.release.xcconfig"; sourceTree = "<group>"; };
-		72FEA2E46FCF4AD08661D5BA /* homeViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = homeViewController.swift; path = home/View/homeViewController.swift; sourceTree = "<group>"; };
 		837C8F35677525B7791202B2 /* Pods-LifeGaugeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LifeGaugeUITests.release.xcconfig"; path = "Target Support Files/Pods-LifeGaugeUITests/Pods-LifeGaugeUITests.release.xcconfig"; sourceTree = "<group>"; };
-		B4E3BD34BB1B49BED60B032E /* homePresenterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = homePresenterTests.swift; path = home/Presenter/homePresenterTests.swift; sourceTree = "<group>"; };
-		BC21697456FD01988D6A34CD /* homeModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = homeModuleInput.swift; path = home/Presenter/homeModuleInput.swift; sourceTree = "<group>"; };
-		C34DBD5CD22B4695747235BD /* homeRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = homeRouterInput.swift; path = home/Router/homeRouterInput.swift; sourceTree = "<group>"; };
-		C5580BC4C65A7F26BCF5C74D /* homeViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = homeViewOutput.swift; path = home/View/homeViewOutput.swift; sourceTree = "<group>"; };
-		C6AC78C4F462F3DCCB367A58 /* homeViewTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = homeViewTests.swift; path = home/View/homeViewTests.swift; sourceTree = "<group>"; };
 		CE663B0540E4C469446AE3B1 /* Pods-LifeGauge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LifeGauge.release.xcconfig"; path = "Target Support Files/Pods-LifeGauge/Pods-LifeGauge.release.xcconfig"; sourceTree = "<group>"; };
-		CEFC4EF55D1E03F875844F85 /* homePresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = homePresenter.swift; path = home/Presenter/homePresenter.swift; sourceTree = "<group>"; };
-		CF55413022B8927C00242B31 /* home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = home.storyboard; path = home/home.storyboard; sourceTree = "<group>"; };
-		CF7CB28522B8B1110075A83C /* TimeGauge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeGauge.swift; sourceTree = "<group>"; };
-		CF7CB28722B9F5970075A83C /* RootRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootRouter.swift; sourceTree = "<group>"; };
-		CFA7954C22BA391F00C55FFB /* TimeGaugeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TimeGaugeCell.swift; path = home/View/TimeGaugeCell.swift; sourceTree = "<group>"; };
-		CFA7954D22BA391F00C55FFB /* TimeGaugeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = TimeGaugeCell.xib; path = home/View/TimeGaugeCell.xib; sourceTree = "<group>"; };
-		CFA7955022BB232A00C55FFB /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
 		D865F5BBEC1C78615141C6CA /* Pods-LifeGaugeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LifeGaugeUITests.debug.xcconfig"; path = "Target Support Files/Pods-LifeGaugeUITests/Pods-LifeGaugeUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		DA4309DE900C503D87DA6A25 /* Pods_LifeGaugeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LifeGaugeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DD998369D343A3D79E0C5C2F /* homeRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = homeRouter.swift; path = home/Router/homeRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,15 +91,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0A56125BD750E2B9AD30A691 /* Presenter */ = {
-			isa = PBXGroup;
-			children = (
-				BC21697456FD01988D6A34CD /* homeModuleInput.swift */,
-				CEFC4EF55D1E03F875844F85 /* homePresenter.swift */,
-			);
-			name = Presenter;
-			sourceTree = "<group>";
-		};
 		1905B73A2D026EBC1D2AF4E8 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -152,17 +104,10 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		2235F766D09DF073ADF665CC /* Presenter */ = {
-			isa = PBXGroup;
-			children = (
-				B4E3BD34BB1B49BED60B032E /* homePresenterTests.swift */,
-			);
-			name = Presenter;
-			sourceTree = "<group>";
-		};
 		4930C24122B7566300DE2162 = {
 			isa = PBXGroup;
 			children = (
+				49DA776522BBEDBC00E32A9D /* R.generated.swift */,
 				4930C24C22B7566300DE2162 /* LifeGauge */,
 				4930C26122B7566C00DE2162 /* LifeGaugeTests */,
 				4930C26C22B7566C00DE2162 /* LifeGaugeUITests */,
@@ -191,10 +136,8 @@
 				4930C25422B7566B00DE2162 /* Assets.xcassets */,
 				4930C25622B7566B00DE2162 /* LaunchScreen.storyboard */,
 				4930C25922B7566B00DE2162 /* Info.plist */,
-				CF7CB28422B8B0D70075A83C /* Entities */,
 				4930C28722B7649600DE2162 /* Modules */,
 				4930C27B22B7649600DE2162 /* Tests */,
-				CFA7955022BB232A00C55FFB /* Util.swift */,
 			);
 			path = LifeGauge;
 			sourceTree = "<group>";
@@ -220,7 +163,6 @@
 		4930C27B22B7649600DE2162 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				5E193684048C9B5820E7F141 /* home */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -228,22 +170,8 @@
 		4930C28722B7649600DE2162 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				CF7CB28722B9F5970075A83C /* RootRouter.swift */,
-				9A5CB9A357BE33EA6CC296EA /* home */,
 			);
 			path = Modules;
-			sourceTree = "<group>";
-		};
-		5E193684048C9B5820E7F141 /* home */ = {
-			isa = PBXGroup;
-			children = (
-				7357BF0532C3BEA60FECE77F /* Configurator */,
-				D35C5C0C0116F2409822826F /* View */,
-				CF2142C102B04E0D6F2AEB27 /* Interactor */,
-				2235F766D09DF073ADF665CC /* Presenter */,
-				DAD3A426810C98A06CF15B05 /* Router */,
-			);
-			name = home;
 			sourceTree = "<group>";
 		};
 		6800861B3D5A171A7CC95A17 /* Frameworks */ = {
@@ -254,99 +182,6 @@
 				1958CDB82FB22E8B54DCD864 /* Pods_LifeGaugeUITests.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		7357BF0532C3BEA60FECE77F /* Configurator */ = {
-			isa = PBXGroup;
-			children = (
-				29B4590FADDEFB4AC6B1CB71 /* homeConfiguratorTests.swift */,
-			);
-			name = Configurator;
-			sourceTree = "<group>";
-		};
-		7CCFFA276CE1CFF8CF4D9353 /* Interactor */ = {
-			isa = PBXGroup;
-			children = (
-				0F37179D083F1B6A4CC876C6 /* homeInteractorInput.swift */,
-				417214E78C5B26784D27DFE3 /* homeInteractorOutput.swift */,
-				4AB226A340FAF00A04CB1657 /* homeInteractor.swift */,
-			);
-			name = Interactor;
-			sourceTree = "<group>";
-		};
-		98B89C79D32323BCCCD09CD1 /* Configurator */ = {
-			isa = PBXGroup;
-			children = (
-				0D3C2C2BF70D72C92D03A54E /* homeConfigurator.swift */,
-				31C7D4BD7DB8389CA5E5BE32 /* homeInitializer.swift */,
-			);
-			name = Configurator;
-			sourceTree = "<group>";
-		};
-		9A5CB9A357BE33EA6CC296EA /* home */ = {
-			isa = PBXGroup;
-			children = (
-				C903E2095D3BB86AF4378B39 /* View */,
-				0A56125BD750E2B9AD30A691 /* Presenter */,
-				7CCFFA276CE1CFF8CF4D9353 /* Interactor */,
-				E11CCCD1E4EF51CF82C3F99F /* Router */,
-				98B89C79D32323BCCCD09CD1 /* Configurator */,
-				CF55413022B8927C00242B31 /* home.storyboard */,
-				CFA7954C22BA391F00C55FFB /* TimeGaugeCell.swift */,
-				CFA7954D22BA391F00C55FFB /* TimeGaugeCell.xib */,
-			);
-			name = home;
-			sourceTree = "<group>";
-		};
-		C903E2095D3BB86AF4378B39 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				67E1AB70C4C4DB2B0CB954F9 /* homeViewInput.swift */,
-				C5580BC4C65A7F26BCF5C74D /* homeViewOutput.swift */,
-				72FEA2E46FCF4AD08661D5BA /* homeViewController.swift */,
-			);
-			name = View;
-			sourceTree = "<group>";
-		};
-		CF2142C102B04E0D6F2AEB27 /* Interactor */ = {
-			isa = PBXGroup;
-			children = (
-				5FB32A73ACCF49C7680D2691 /* homeInteractorTests.swift */,
-			);
-			name = Interactor;
-			sourceTree = "<group>";
-		};
-		CF7CB28422B8B0D70075A83C /* Entities */ = {
-			isa = PBXGroup;
-			children = (
-				CF7CB28522B8B1110075A83C /* TimeGauge.swift */,
-			);
-			path = Entities;
-			sourceTree = "<group>";
-		};
-		D35C5C0C0116F2409822826F /* View */ = {
-			isa = PBXGroup;
-			children = (
-				C6AC78C4F462F3DCCB367A58 /* homeViewTests.swift */,
-			);
-			name = View;
-			sourceTree = "<group>";
-		};
-		DAD3A426810C98A06CF15B05 /* Router */ = {
-			isa = PBXGroup;
-			children = (
-				4414737413464D8B8B4474A1 /* homeRouterTests.swift */,
-			);
-			name = Router;
-			sourceTree = "<group>";
-		};
-		E11CCCD1E4EF51CF82C3F99F /* Router */ = {
-			isa = PBXGroup;
-			children = (
-				C34DBD5CD22B4695747235BD /* homeRouterInput.swift */,
-				DD998369D343A3D79E0C5C2F /* homeRouter.swift */,
-			);
-			name = Router;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -361,6 +196,7 @@
 				4930C24722B7566300DE2162 /* Frameworks */,
 				4930C24822B7566300DE2162 /* Resources */,
 				9346CED2AA1809A64E48D35B /* [CP] Embed Pods Frameworks */,
+				49DA776422BBEC3800E32A9D /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -457,9 +293,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CFA7954F22BA391F00C55FFB /* TimeGaugeCell.xib in Resources */,
 				4930C25822B7566B00DE2162 /* LaunchScreen.storyboard in Resources */,
-				CF55413122B8927C00242B31 /* home.storyboard in Resources */,
 				4930C25522B7566B00DE2162 /* Assets.xcassets in Resources */,
 				4930C25322B7566300DE2162 /* Main.storyboard in Resources */,
 			);
@@ -503,6 +337,25 @@
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
+		};
+		49DA776422BBEC3800E32A9D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$TEMP_DIR/rswift-lastrun",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				$SRCROOT/R.generated.swift,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/R.generated.swift\"\n\n";
 		};
 		9346CED2AA1809A64E48D35B /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -572,24 +425,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CF7CB27E22B8AFA30075A83C /* homeInteractorOutput.swift in Sources */,
-				CF7CB28022B8AFA90075A83C /* homeRouterInput.swift in Sources */,
-				CF7CB28822B9F5970075A83C /* RootRouter.swift in Sources */,
-				CFA7954E22BA391F00C55FFB /* TimeGaugeCell.swift in Sources */,
-				CF7CB27922B8AF980075A83C /* homeViewInput.swift in Sources */,
-				CFA7955122BB232A00C55FFB /* Util.swift in Sources */,
-				CF7CB28122B8AFA90075A83C /* homeRouter.swift in Sources */,
-				CF7CB27A22B8AF980075A83C /* homeViewOutput.swift in Sources */,
 				4930C25022B7566300DE2162 /* ViewController.swift in Sources */,
-				CF7CB27B22B8AF9E0075A83C /* homeModuleInput.swift in Sources */,
-				CF7CB27D22B8AFA30075A83C /* homeInteractorInput.swift in Sources */,
-				CF7CB28622B8B1110075A83C /* TimeGauge.swift in Sources */,
 				4930C24E22B7566300DE2162 /* AppDelegate.swift in Sources */,
-				CF7CB27F22B8AFA30075A83C /* homeInteractor.swift in Sources */,
-				CF7CB27822B8AF6E0075A83C /* homeViewController.swift in Sources */,
-				CF7CB28222B8AFAF0075A83C /* homeConfigurator.swift in Sources */,
-				CF7CB27C22B8AF9E0075A83C /* homePresenter.swift in Sources */,
-				CF7CB28322B8AFAF0075A83C /* homeInitializer.swift in Sources */,
+				49DA776622BBEDBC00E32A9D /* R.generated.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
