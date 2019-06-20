@@ -15,11 +15,7 @@
 		4930C25822B7566B00DE2162 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4930C25622B7566B00DE2162 /* LaunchScreen.storyboard */; };
 		4930C26322B7566C00DE2162 /* LifeGaugeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4930C26222B7566C00DE2162 /* LifeGaugeTests.swift */; };
 		4930C26E22B7566C00DE2162 /* LifeGaugeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4930C26D22B7566C00DE2162 /* LifeGaugeUITests.swift */; };
-		4930C29A22B7649600DE2162 /* loginPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4930C27E22B7649600DE2162 /* loginPresenterTests.swift */; };
-		4930C29B22B7649600DE2162 /* loginViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4930C28022B7649600DE2162 /* loginViewTests.swift */; };
-		4930C29C22B7649600DE2162 /* loginConfiguratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4930C28222B7649600DE2162 /* loginConfiguratorTests.swift */; };
-		4930C29D22B7649600DE2162 /* loginInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4930C28422B7649600DE2162 /* loginInteractorTests.swift */; };
-		4930C29E22B7649600DE2162 /* loginRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4930C28622B7649600DE2162 /* loginRouterTests.swift */; };
+		49DA776622BBEDBC00E32A9D /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DA776522BBEDBC00E32A9D /* R.generated.swift */; };
 		6706184109770734DB36748B /* Pods_LifeGaugeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA4309DE900C503D87DA6A25 /* Pods_LifeGaugeTests.framework */; };
 		A488D6E519A5D29F078B050F /* Pods_LifeGaugeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1958CDB82FB22E8B54DCD864 /* Pods_LifeGaugeUITests.framework */; };
 /* End PBXBuildFile section */
@@ -59,11 +55,7 @@
 		4930C26922B7566C00DE2162 /* LifeGaugeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LifeGaugeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4930C26D22B7566C00DE2162 /* LifeGaugeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeGaugeUITests.swift; sourceTree = "<group>"; };
 		4930C26F22B7566C00DE2162 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4930C27E22B7649600DE2162 /* loginPresenterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = loginPresenterTests.swift; sourceTree = "<group>"; };
-		4930C28022B7649600DE2162 /* loginViewTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = loginViewTests.swift; sourceTree = "<group>"; };
-		4930C28222B7649600DE2162 /* loginConfiguratorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = loginConfiguratorTests.swift; sourceTree = "<group>"; };
-		4930C28422B7649600DE2162 /* loginInteractorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = loginInteractorTests.swift; sourceTree = "<group>"; };
-		4930C28622B7649600DE2162 /* loginRouterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = loginRouterTests.swift; sourceTree = "<group>"; };
+		49DA776522BBEDBC00E32A9D /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		72FC52114F7AD8F5C6ACB753 /* Pods-LifeGaugeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LifeGaugeTests.release.xcconfig"; path = "Target Support Files/Pods-LifeGaugeTests/Pods-LifeGaugeTests.release.xcconfig"; sourceTree = "<group>"; };
 		837C8F35677525B7791202B2 /* Pods-LifeGaugeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LifeGaugeUITests.release.xcconfig"; path = "Target Support Files/Pods-LifeGaugeUITests/Pods-LifeGaugeUITests.release.xcconfig"; sourceTree = "<group>"; };
 		CE663B0540E4C469446AE3B1 /* Pods-LifeGauge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LifeGauge.release.xcconfig"; path = "Target Support Files/Pods-LifeGauge/Pods-LifeGauge.release.xcconfig"; sourceTree = "<group>"; };
@@ -115,6 +107,7 @@
 		4930C24122B7566300DE2162 = {
 			isa = PBXGroup;
 			children = (
+				49DA776522BBEDBC00E32A9D /* R.generated.swift */,
 				4930C24C22B7566300DE2162 /* LifeGauge */,
 				4930C26122B7566C00DE2162 /* LifeGaugeTests */,
 				4930C26C22B7566C00DE2162 /* LifeGaugeUITests */,
@@ -170,61 +163,8 @@
 		4930C27B22B7649600DE2162 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				4930C27C22B7649600DE2162 /* login */,
 			);
 			path = Tests;
-			sourceTree = "<group>";
-		};
-		4930C27C22B7649600DE2162 /* login */ = {
-			isa = PBXGroup;
-			children = (
-				4930C27D22B7649600DE2162 /* Presenter */,
-				4930C27F22B7649600DE2162 /* View */,
-				4930C28122B7649600DE2162 /* Configurator */,
-				4930C28322B7649600DE2162 /* Interactor */,
-				4930C28522B7649600DE2162 /* Router */,
-			);
-			path = login;
-			sourceTree = "<group>";
-		};
-		4930C27D22B7649600DE2162 /* Presenter */ = {
-			isa = PBXGroup;
-			children = (
-				4930C27E22B7649600DE2162 /* loginPresenterTests.swift */,
-			);
-			path = Presenter;
-			sourceTree = "<group>";
-		};
-		4930C27F22B7649600DE2162 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				4930C28022B7649600DE2162 /* loginViewTests.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		4930C28122B7649600DE2162 /* Configurator */ = {
-			isa = PBXGroup;
-			children = (
-				4930C28222B7649600DE2162 /* loginConfiguratorTests.swift */,
-			);
-			path = Configurator;
-			sourceTree = "<group>";
-		};
-		4930C28322B7649600DE2162 /* Interactor */ = {
-			isa = PBXGroup;
-			children = (
-				4930C28422B7649600DE2162 /* loginInteractorTests.swift */,
-			);
-			path = Interactor;
-			sourceTree = "<group>";
-		};
-		4930C28522B7649600DE2162 /* Router */ = {
-			isa = PBXGroup;
-			children = (
-				4930C28622B7649600DE2162 /* loginRouterTests.swift */,
-			);
-			path = Router;
 			sourceTree = "<group>";
 		};
 		4930C28722B7649600DE2162 /* Modules */ = {
@@ -256,6 +196,7 @@
 				4930C24722B7566300DE2162 /* Frameworks */,
 				4930C24822B7566300DE2162 /* Resources */,
 				9346CED2AA1809A64E48D35B /* [CP] Embed Pods Frameworks */,
+				49DA776422BBEC3800E32A9D /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -397,6 +338,25 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		49DA776422BBEC3800E32A9D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$TEMP_DIR/rswift-lastrun",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				$SRCROOT/R.generated.swift,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/R.generated.swift\"\n\n";
+		};
 		9346CED2AA1809A64E48D35B /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -465,13 +425,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4930C29C22B7649600DE2162 /* loginConfiguratorTests.swift in Sources */,
-				4930C29A22B7649600DE2162 /* loginPresenterTests.swift in Sources */,
-				4930C29D22B7649600DE2162 /* loginInteractorTests.swift in Sources */,
 				4930C25022B7566300DE2162 /* ViewController.swift in Sources */,
-				4930C29B22B7649600DE2162 /* loginViewTests.swift in Sources */,
-				4930C29E22B7649600DE2162 /* loginRouterTests.swift in Sources */,
 				4930C24E22B7566300DE2162 /* AppDelegate.swift in Sources */,
+				49DA776622BBEDBC00E32A9D /* R.generated.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -648,6 +604,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6UY7B6KRDJ;
 				INFOPLIST_FILE = LifeGauge/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -666,6 +623,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6UY7B6KRDJ;
 				INFOPLIST_FILE = LifeGauge/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
