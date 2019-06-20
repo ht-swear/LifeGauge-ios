@@ -20,18 +20,6 @@
 		4930C29C22B7649600DE2162 /* loginConfiguratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4930C28222B7649600DE2162 /* loginConfiguratorTests.swift */; };
 		4930C29D22B7649600DE2162 /* loginInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4930C28422B7649600DE2162 /* loginInteractorTests.swift */; };
 		4930C29E22B7649600DE2162 /* loginRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4930C28622B7649600DE2162 /* loginRouterTests.swift */; };
-		4930C29F22B7649600DE2162 /* loginModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4930C28A22B7649600DE2162 /* loginModuleInput.swift */; };
-		4930C2A022B7649600DE2162 /* loginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4930C28B22B7649600DE2162 /* loginPresenter.swift */; };
-		4930C2A122B7649600DE2162 /* loginViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4930C28D22B7649600DE2162 /* loginViewOutput.swift */; };
-		4930C2A222B7649600DE2162 /* loginViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4930C28E22B7649600DE2162 /* loginViewInput.swift */; };
-		4930C2A322B7649600DE2162 /* loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4930C28F22B7649600DE2162 /* loginViewController.swift */; };
-		4930C2A422B7649600DE2162 /* loginInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4930C29122B7649600DE2162 /* loginInitializer.swift */; };
-		4930C2A522B7649600DE2162 /* loginConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4930C29222B7649600DE2162 /* loginConfigurator.swift */; };
-		4930C2A622B7649600DE2162 /* loginInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4930C29422B7649600DE2162 /* loginInteractorOutput.swift */; };
-		4930C2A722B7649600DE2162 /* loginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4930C29522B7649600DE2162 /* loginInteractor.swift */; };
-		4930C2A822B7649600DE2162 /* loginInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4930C29622B7649600DE2162 /* loginInteractorInput.swift */; };
-		4930C2A922B7649600DE2162 /* loginRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4930C29822B7649600DE2162 /* loginRouterInput.swift */; };
-		4930C2AA22B7649600DE2162 /* loginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4930C29922B7649600DE2162 /* loginRouter.swift */; };
 		6706184109770734DB36748B /* Pods_LifeGaugeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA4309DE900C503D87DA6A25 /* Pods_LifeGaugeTests.framework */; };
 		A488D6E519A5D29F078B050F /* Pods_LifeGaugeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1958CDB82FB22E8B54DCD864 /* Pods_LifeGaugeUITests.framework */; };
 /* End PBXBuildFile section */
@@ -76,18 +64,6 @@
 		4930C28222B7649600DE2162 /* loginConfiguratorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = loginConfiguratorTests.swift; sourceTree = "<group>"; };
 		4930C28422B7649600DE2162 /* loginInteractorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = loginInteractorTests.swift; sourceTree = "<group>"; };
 		4930C28622B7649600DE2162 /* loginRouterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = loginRouterTests.swift; sourceTree = "<group>"; };
-		4930C28A22B7649600DE2162 /* loginModuleInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = loginModuleInput.swift; sourceTree = "<group>"; };
-		4930C28B22B7649600DE2162 /* loginPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = loginPresenter.swift; sourceTree = "<group>"; };
-		4930C28D22B7649600DE2162 /* loginViewOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = loginViewOutput.swift; sourceTree = "<group>"; };
-		4930C28E22B7649600DE2162 /* loginViewInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = loginViewInput.swift; sourceTree = "<group>"; };
-		4930C28F22B7649600DE2162 /* loginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = loginViewController.swift; sourceTree = "<group>"; };
-		4930C29122B7649600DE2162 /* loginInitializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = loginInitializer.swift; sourceTree = "<group>"; };
-		4930C29222B7649600DE2162 /* loginConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = loginConfigurator.swift; sourceTree = "<group>"; };
-		4930C29422B7649600DE2162 /* loginInteractorOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = loginInteractorOutput.swift; sourceTree = "<group>"; };
-		4930C29522B7649600DE2162 /* loginInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = loginInteractor.swift; sourceTree = "<group>"; };
-		4930C29622B7649600DE2162 /* loginInteractorInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = loginInteractorInput.swift; sourceTree = "<group>"; };
-		4930C29822B7649600DE2162 /* loginRouterInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = loginRouterInput.swift; sourceTree = "<group>"; };
-		4930C29922B7649600DE2162 /* loginRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = loginRouter.swift; sourceTree = "<group>"; };
 		72FC52114F7AD8F5C6ACB753 /* Pods-LifeGaugeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LifeGaugeTests.release.xcconfig"; path = "Target Support Files/Pods-LifeGaugeTests/Pods-LifeGaugeTests.release.xcconfig"; sourceTree = "<group>"; };
 		837C8F35677525B7791202B2 /* Pods-LifeGaugeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LifeGaugeUITests.release.xcconfig"; path = "Target Support Files/Pods-LifeGaugeUITests/Pods-LifeGaugeUITests.release.xcconfig"; sourceTree = "<group>"; };
 		CE663B0540E4C469446AE3B1 /* Pods-LifeGauge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LifeGauge.release.xcconfig"; path = "Target Support Files/Pods-LifeGauge/Pods-LifeGauge.release.xcconfig"; sourceTree = "<group>"; };
@@ -254,68 +230,8 @@
 		4930C28722B7649600DE2162 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				4930C28822B7649600DE2162 /* login */,
 			);
 			path = Modules;
-			sourceTree = "<group>";
-		};
-		4930C28822B7649600DE2162 /* login */ = {
-			isa = PBXGroup;
-			children = (
-				4930C28922B7649600DE2162 /* Presenter */,
-				4930C28C22B7649600DE2162 /* View */,
-				4930C29022B7649600DE2162 /* Configurator */,
-				4930C29322B7649600DE2162 /* Interactor */,
-				4930C29722B7649600DE2162 /* Router */,
-			);
-			path = login;
-			sourceTree = "<group>";
-		};
-		4930C28922B7649600DE2162 /* Presenter */ = {
-			isa = PBXGroup;
-			children = (
-				4930C28A22B7649600DE2162 /* loginModuleInput.swift */,
-				4930C28B22B7649600DE2162 /* loginPresenter.swift */,
-			);
-			path = Presenter;
-			sourceTree = "<group>";
-		};
-		4930C28C22B7649600DE2162 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				4930C28D22B7649600DE2162 /* loginViewOutput.swift */,
-				4930C28E22B7649600DE2162 /* loginViewInput.swift */,
-				4930C28F22B7649600DE2162 /* loginViewController.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		4930C29022B7649600DE2162 /* Configurator */ = {
-			isa = PBXGroup;
-			children = (
-				4930C29122B7649600DE2162 /* loginInitializer.swift */,
-				4930C29222B7649600DE2162 /* loginConfigurator.swift */,
-			);
-			path = Configurator;
-			sourceTree = "<group>";
-		};
-		4930C29322B7649600DE2162 /* Interactor */ = {
-			isa = PBXGroup;
-			children = (
-				4930C29422B7649600DE2162 /* loginInteractorOutput.swift */,
-				4930C29522B7649600DE2162 /* loginInteractor.swift */,
-				4930C29622B7649600DE2162 /* loginInteractorInput.swift */,
-			);
-			path = Interactor;
-			sourceTree = "<group>";
-		};
-		4930C29722B7649600DE2162 /* Router */ = {
-			isa = PBXGroup;
-			children = (
-				4930C29822B7649600DE2162 /* loginRouterInput.swift */,
-				4930C29922B7649600DE2162 /* loginRouter.swift */,
-			);
-			path = Router;
 			sourceTree = "<group>";
 		};
 		6800861B3D5A171A7CC95A17 /* Frameworks */ = {
@@ -549,25 +465,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4930C2AA22B7649600DE2162 /* loginRouter.swift in Sources */,
-				4930C2A822B7649600DE2162 /* loginInteractorInput.swift in Sources */,
-				4930C29F22B7649600DE2162 /* loginModuleInput.swift in Sources */,
 				4930C29C22B7649600DE2162 /* loginConfiguratorTests.swift in Sources */,
 				4930C29A22B7649600DE2162 /* loginPresenterTests.swift in Sources */,
-				4930C2A122B7649600DE2162 /* loginViewOutput.swift in Sources */,
-				4930C2A722B7649600DE2162 /* loginInteractor.swift in Sources */,
-				4930C2A022B7649600DE2162 /* loginPresenter.swift in Sources */,
-				4930C2A922B7649600DE2162 /* loginRouterInput.swift in Sources */,
 				4930C29D22B7649600DE2162 /* loginInteractorTests.swift in Sources */,
-				4930C2A222B7649600DE2162 /* loginViewInput.swift in Sources */,
 				4930C25022B7566300DE2162 /* ViewController.swift in Sources */,
-				4930C2A322B7649600DE2162 /* loginViewController.swift in Sources */,
 				4930C29B22B7649600DE2162 /* loginViewTests.swift in Sources */,
 				4930C29E22B7649600DE2162 /* loginRouterTests.swift in Sources */,
 				4930C24E22B7566300DE2162 /* AppDelegate.swift in Sources */,
-				4930C2A622B7649600DE2162 /* loginInteractorOutput.swift in Sources */,
-				4930C2A522B7649600DE2162 /* loginConfigurator.swift in Sources */,
-				4930C2A422B7649600DE2162 /* loginInitializer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
