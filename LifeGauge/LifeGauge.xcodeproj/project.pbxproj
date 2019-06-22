@@ -191,12 +191,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4930C27222B7566C00DE2162 /* Build configuration list for PBXNativeTarget "LifeGauge" */;
 			buildPhases = (
+				49DA776422BBEC3800E32A9D /* ShellScript */,
 				B919D83525B2BFAA67051068 /* [CP] Check Pods Manifest.lock */,
 				4930C24622B7566300DE2162 /* Sources */,
 				4930C24722B7566300DE2162 /* Frameworks */,
 				4930C24822B7566300DE2162 /* Resources */,
 				9346CED2AA1809A64E48D35B /* [CP] Embed Pods Frameworks */,
-				49DA776422BBEC3800E32A9D /* ShellScript */,
 			);
 			buildRules = (
 			);
