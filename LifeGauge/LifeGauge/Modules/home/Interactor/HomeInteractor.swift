@@ -8,9 +8,9 @@
 
 import Foundation
 
-class homeInteractor: homeInteractorInput {
+class HomeInteractor: HomeInteractorInput{
 
-    weak var output: homeInteractorOutput!
+    weak var output: HomeInteractorOutput!
     
     
     // homeInteractorInput

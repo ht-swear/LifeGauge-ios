@@ -8,10 +8,10 @@
 
 import UIKit
 
-class homeViewController: UIViewController
+class HomeViewController: UIViewController
 {
     // Property
-    var output: homeViewOutput!
+    var output: HomeViewOutput!
     
     private var timeGauges: [TimeGauge] = [] {
         didSet {
@@ -55,7 +55,7 @@ class homeViewController: UIViewController
     }
 }
 
-extension homeViewController: homeViewInput
+extension HomeViewController: HomeViewInput
 {
     //------------------------------------------------------------//
     // MARK: -- homeViewInput --
@@ -73,7 +73,7 @@ extension homeViewController: homeViewInput
     }
 }
 
-extension homeViewController: UICollectionViewDataSource
+extension HomeViewController: UICollectionViewDataSource
 {
     //------------------------------------------------------------//
     // MARK: -- UICollectionViewDataSource --
@@ -94,14 +94,14 @@ extension homeViewController: UICollectionViewDataSource
     }
 }
 
-extension homeViewController: UICollectionViewDelegate
+extension HomeViewController: UICollectionViewDelegate
 {
     //------------------------------------------------------------//
     // MARK: -- UICollectionViewDelegate --
     //------------------------------------------------------------//
 }
 
-extension homeViewController: UICollectionViewDelegateFlowLayout
+extension HomeViewController: UICollectionViewDelegateFlowLayout
 {
     //------------------------------------------------------------//
     // MARK: -- UICollectionViewDelegateFlowLayout --

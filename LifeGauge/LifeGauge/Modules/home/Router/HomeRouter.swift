@@ -8,17 +8,17 @@
 
 import UIKit
 
-class homeRouter: homeRouterInput
+class HomeRouter: HomeRouterInput
 {
     weak var viewController: UIViewController!
     
     static func assembleModule() -> UIViewController?
     {
-        guard let navigation = UIStoryboard(name: "home", bundle: nil).instantiateInitialViewController() as? UINavigationController else { return nil }
-        guard let view = navigation.topViewController as? homeViewController else { return navigation }
-        let presenter = homePresenter()
-        let interactor = homeInteractor()
-        let router = homeRouter()
+        guard let navigation = UIStoryboard(name: "Main", bundle: nil).instantiateInitialViewController() as? UINavigationController else { return nil }
+        guard let view = navigation.topViewController as? HomeViewController else { return navigation }
+        let presenter = HomePresenter()
+        let interactor = HomeInteractor()
+        let router = HomeRouter()
         
         view.output = presenter
         

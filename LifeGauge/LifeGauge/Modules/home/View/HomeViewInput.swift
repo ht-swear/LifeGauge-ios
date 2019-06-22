@@ -6,7 +6,7 @@
 //  Copyright © 2019 ht-swear. All rights reserved.
 //
 
-protocol homeViewInput: class {
+protocol HomeViewInput: class {
 
     /**
         @author 

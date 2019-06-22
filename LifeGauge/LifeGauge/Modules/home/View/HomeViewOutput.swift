@@ -1,17 +1,18 @@
 //
-//  loginViewOutput.swift
+//  homeViewOutput.swift
 //  LifeGauge-ios
 //
-//  Created by Rei Ishikawa on 17/06/2019.
+//  Created by  on 18/06/2019.
 //  Copyright © 2019 ht-swear. All rights reserved.
 //
 
-protocol loginViewOutput {
+protocol HomeViewOutput {
 
     /**
-        @author Rei Ishikawa
+        @author 
         Notify presenter that view is ready
     */
 
     func viewIsReady()
+    func fetchTimeGauges()
 }

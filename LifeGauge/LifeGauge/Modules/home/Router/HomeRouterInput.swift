@@ -1,5 +1,5 @@
 //
-//  homeInteractorInput.swift
+//  homeRouterInput.swift
 //  LifeGauge-ios
 //
 //  Created by  on 18/06/2019.
@@ -8,6 +8,6 @@
 
 import Foundation
 
-protocol homeInteractorInput {
-    func fetchTimeGauges()
+protocol HomeRouterInput {
+
 }
