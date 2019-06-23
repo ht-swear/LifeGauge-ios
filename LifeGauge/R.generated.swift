@@ -16,6 +16,24 @@ struct R: Rswift.Validatable {
     try intern.validate()
   }
   
+  /// This `R.nib` struct is generated, and contains static references to 1 nibs.
+  struct nib {
+    /// Nib `TimeGaugeCell`.
+    static let timeGaugeCell = _R.nib._TimeGaugeCell()
+    
+    /// `UINib(name: "TimeGaugeCell", in: bundle)`
+    @available(*, deprecated, message: "Use UINib(resource: R.nib.timeGaugeCell) instead")
+    static func timeGaugeCell(_: Void = ()) -> UIKit.UINib {
+      return UIKit.UINib(resource: R.nib.timeGaugeCell)
+    }
+    
+    static func timeGaugeCell(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> TimeGaugeCell? {
+      return R.nib.timeGaugeCell.instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? TimeGaugeCell
+    }
+    
+    fileprivate init() {}
+  }
+  
   /// This `R.storyboard` struct is generated, and contains static references to 2 storyboards.
   struct storyboard {
     /// Storyboard `LaunchScreen`.
@@ -54,6 +72,21 @@ struct _R: Rswift.Validatable {
     try storyboard.validate()
   }
   
+  struct nib {
+    struct _TimeGaugeCell: Rswift.NibResourceType {
+      let bundle = R.hostingBundle
+      let name = "TimeGaugeCell"
+      
+      func firstView(owner ownerOrNil: AnyObject?, options optionsOrNil: [UINib.OptionsKey : Any]? = nil) -> TimeGaugeCell? {
+        return instantiate(withOwner: ownerOrNil, options: optionsOrNil)[0] as? TimeGaugeCell
+      }
+      
+      fileprivate init() {}
+    }
+    
+    fileprivate init() {}
+  }
+  
   struct storyboard: Rswift.Validatable {
     static func validate() throws {
       try launchScreen.validate()
@@ -75,14 +108,20 @@ struct _R: Rswift.Validatable {
     }
     
     struct main: Rswift.StoryboardResourceWithInitialControllerType, Rswift.Validatable {
-      typealias InitialController = ViewController
+      typealias InitialController = UIKit.UINavigationController
       
       let bundle = R.hostingBundle
+      let homeViewController = StoryboardViewControllerResource<HomeViewController>(identifier: "homeViewController")
       let name = "Main"
+      
+      func homeViewController(_: Void = ()) -> HomeViewController? {
+        return UIKit.UIStoryboard(resource: self).instantiateViewController(withResource: homeViewController)
+      }
       
       static func validate() throws {
         if #available(iOS 11.0, *) {
         }
+        if _R.storyboard.main().homeViewController() == nil { throw Rswift.ValidationError(description:"[R.swift] ViewController with identifier 'homeViewController' could not be loaded from storyboard 'Main' as 'HomeViewController'.") }
       }
       
       fileprivate init() {}
