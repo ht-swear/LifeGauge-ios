@@ -14,6 +14,7 @@
 		4930C25822B7566B00DE2162 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4930C25622B7566B00DE2162 /* LaunchScreen.storyboard */; };
 		4930C26322B7566C00DE2162 /* LifeGaugeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4930C26222B7566C00DE2162 /* LifeGaugeTests.swift */; };
 		4930C26E22B7566C00DE2162 /* LifeGaugeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4930C26D22B7566C00DE2162 /* LifeGaugeUITests.swift */; };
+		49DA776622BBEDBC00E32A9D /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DA776522BBEDBC00E32A9D /* R.generated.swift */; };
 		6706184109770734DB36748B /* Pods_LifeGaugeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA4309DE900C503D87DA6A25 /* Pods_LifeGaugeTests.framework */; };
 		A488D6E519A5D29F078B050F /* Pods_LifeGaugeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1958CDB82FB22E8B54DCD864 /* Pods_LifeGaugeUITests.framework */; };
 		CF55413222B8ACBD00242B31 /* loginConfiguratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4930C28222B7649600DE2162 /* loginConfiguratorTests.swift */; };
@@ -83,6 +84,7 @@
 		4AB226A340FAF00A04CB1657 /* HomeInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HomeInteractor.swift; path = home/Interactor/HomeInteractor.swift; sourceTree = "<group>"; };
 		5FB32A73ACCF49C7680D2691 /* homeInteractorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = homeInteractorTests.swift; path = home/Interactor/homeInteractorTests.swift; sourceTree = "<group>"; };
 		67E1AB70C4C4DB2B0CB954F9 /* HomeViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HomeViewInput.swift; path = home/View/HomeViewInput.swift; sourceTree = "<group>"; };
+		49DA776522BBEDBC00E32A9D /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		72FC52114F7AD8F5C6ACB753 /* Pods-LifeGaugeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LifeGaugeTests.release.xcconfig"; path = "Target Support Files/Pods-LifeGaugeTests/Pods-LifeGaugeTests.release.xcconfig"; sourceTree = "<group>"; };
 		72FEA2E46FCF4AD08661D5BA /* HomeViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = home/View/HomeViewController.swift; sourceTree = "<group>"; };
 		837C8F35677525B7791202B2 /* Pods-LifeGaugeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LifeGaugeUITests.release.xcconfig"; path = "Target Support Files/Pods-LifeGaugeUITests/Pods-LifeGaugeUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -162,6 +164,7 @@
 		4930C24122B7566300DE2162 = {
 			isa = PBXGroup;
 			children = (
+				49DA776522BBEDBC00E32A9D /* R.generated.swift */,
 				4930C24C22B7566300DE2162 /* LifeGauge */,
 				4930C26122B7566C00DE2162 /* LifeGaugeTests */,
 				4930C26C22B7566C00DE2162 /* LifeGaugeUITests */,
@@ -223,58 +226,6 @@
 				5E193684048C9B5820E7F141 /* home */,
 			);
 			path = Tests;
-			sourceTree = "<group>";
-		};
-		4930C27C22B7649600DE2162 /* login */ = {
-			isa = PBXGroup;
-			children = (
-				4930C27D22B7649600DE2162 /* Presenter */,
-				4930C27F22B7649600DE2162 /* View */,
-				4930C28122B7649600DE2162 /* Configurator */,
-				4930C28322B7649600DE2162 /* Interactor */,
-				4930C28522B7649600DE2162 /* Router */,
-			);
-			path = login;
-			sourceTree = "<group>";
-		};
-		4930C27D22B7649600DE2162 /* Presenter */ = {
-			isa = PBXGroup;
-			children = (
-				4930C27E22B7649600DE2162 /* loginPresenterTests.swift */,
-			);
-			path = Presenter;
-			sourceTree = "<group>";
-		};
-		4930C27F22B7649600DE2162 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				4930C28022B7649600DE2162 /* loginViewTests.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		4930C28122B7649600DE2162 /* Configurator */ = {
-			isa = PBXGroup;
-			children = (
-				4930C28222B7649600DE2162 /* loginConfiguratorTests.swift */,
-			);
-			path = Configurator;
-			sourceTree = "<group>";
-		};
-		4930C28322B7649600DE2162 /* Interactor */ = {
-			isa = PBXGroup;
-			children = (
-				4930C28422B7649600DE2162 /* loginInteractorTests.swift */,
-			);
-			path = Interactor;
-			sourceTree = "<group>";
-		};
-		4930C28522B7649600DE2162 /* Router */ = {
-			isa = PBXGroup;
-			children = (
-				4930C28622B7649600DE2162 /* loginRouterTests.swift */,
-			);
-			path = Router;
 			sourceTree = "<group>";
 		};
 		4930C28722B7649600DE2162 /* Modules */ = {
@@ -412,6 +363,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4930C27222B7566C00DE2162 /* Build configuration list for PBXNativeTarget "LifeGauge" */;
 			buildPhases = (
+				49DA776422BBEC3800E32A9D /* ShellScript */,
 				B919D83525B2BFAA67051068 /* [CP] Check Pods Manifest.lock */,
 				4930C24622B7566300DE2162 /* Sources */,
 				4930C24722B7566300DE2162 /* Frameworks */,
@@ -559,6 +511,25 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		49DA776422BBEC3800E32A9D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$TEMP_DIR/rswift-lastrun",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				$SRCROOT/R.generated.swift,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/R.generated.swift\"\n\n";
+		};
 		9346CED2AA1809A64E48D35B /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -641,6 +612,7 @@
 				CF7CB27F22B8AFA30075A83C /* HomeInteractor.swift in Sources */,
 				CF7CB27822B8AF6E0075A83C /* HomeViewController.swift in Sources */,
 				CF7CB27C22B8AF9E0075A83C /* HomePresenter.swift in Sources */,
+				49DA776622BBEDBC00E32A9D /* R.generated.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -822,7 +794,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 396285LGRJ;
+				DEVELOPMENT_TEAM = 6UY7B6KRDJ;
 				INFOPLIST_FILE = LifeGauge/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -841,7 +813,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 396285LGRJ;
+				DEVELOPMENT_TEAM = 6UY7B6KRDJ;
 				INFOPLIST_FILE = LifeGauge/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
