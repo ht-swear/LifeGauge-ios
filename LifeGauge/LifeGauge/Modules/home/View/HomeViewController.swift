@@ -40,6 +40,11 @@ class HomeViewController: UIViewController
         // Notify to presenter
         output.viewIsReady()
         output.fetchTimeGauges()
+        
+        homeCollectionView.isHidden = true
+        let circleView = CircleMenuView(frame: CGRect(x: 0, y: view.frame.height - view.frame.width/2, width: view.frame.width, height: view.frame.width))
+        circleView.set(topCircleWidth: 50, circleItemViewWidth: 40)
+        view.addSubview(circleView)
     }
     
     //------------------------------------------------------------//
