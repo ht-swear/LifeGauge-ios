@@ -26,8 +26,8 @@
 		49DA776622BBEDBC00E32A9D /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DA776522BBEDBC00E32A9D /* R.generated.swift */; };
 		6706184109770734DB36748B /* Pods_LifeGaugeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA4309DE900C503D87DA6A25 /* Pods_LifeGaugeTests.framework */; };
 		A488D6E519A5D29F078B050F /* Pods_LifeGaugeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1958CDB82FB22E8B54DCD864 /* Pods_LifeGaugeUITests.framework */; };
-		CF0FE45122BFAA9700F393E8 /* CircleMenueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0FE45022BFAA9700F393E8 /* CircleMenueView.swift */; };
-		CF0FE45522BFBB2300F393E8 /* CircleItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0FE45422BFBB2300F393E8 /* CircleItemView.swift */; };
+		CF0FE45122BFAA9700F393E8 /* CircleMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0FE45022BFAA9700F393E8 /* CircleMenuView.swift */; };
+		CF0FE45522BFBB2300F393E8 /* CircleMenuViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0FE45422BFBB2300F393E8 /* CircleMenuViewCell.swift */; };
 		CF55413222B8ACBD00242B31 /* loginConfiguratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4930C28222B7649600DE2162 /* loginConfiguratorTests.swift */; };
 		CF55413322B8ACDC00242B31 /* loginPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4930C27E22B7649600DE2162 /* loginPresenterTests.swift */; };
 		CF55413422B8ACE900242B31 /* loginInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4930C28422B7649600DE2162 /* loginInteractorTests.swift */; };
@@ -97,8 +97,8 @@
 		B4E3BD34BB1B49BED60B032E /* homePresenterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = homePresenterTests.swift; path = home/Presenter/homePresenterTests.swift; sourceTree = "<group>"; };
 		C6AC78C4F462F3DCCB367A58 /* homeViewTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = homeViewTests.swift; path = home/View/homeViewTests.swift; sourceTree = "<group>"; };
 		CE663B0540E4C469446AE3B1 /* Pods-LifeGauge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LifeGauge.release.xcconfig"; path = "Target Support Files/Pods-LifeGauge/Pods-LifeGauge.release.xcconfig"; sourceTree = "<group>"; };
-		CF0FE45022BFAA9700F393E8 /* CircleMenueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleMenueView.swift; sourceTree = "<group>"; };
-		CF0FE45422BFBB2300F393E8 /* CircleItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleItemView.swift; sourceTree = "<group>"; };
+		CF0FE45022BFAA9700F393E8 /* CircleMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleMenuView.swift; sourceTree = "<group>"; };
+		CF0FE45422BFBB2300F393E8 /* CircleMenuViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleMenuViewCell.swift; sourceTree = "<group>"; };
 		CF7CB28522B8B1110075A83C /* TimeGauge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeGauge.swift; sourceTree = "<group>"; };
 		CF7CB28722B9F5970075A83C /* RootRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootRouter.swift; sourceTree = "<group>"; };
 		CFA7954C22BA391F00C55FFB /* TimeGaugeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeGaugeCell.swift; sourceTree = "<group>"; };
@@ -352,8 +352,8 @@
 			children = (
 				CFA7954C22BA391F00C55FFB /* TimeGaugeCell.swift */,
 				CFA7954D22BA391F00C55FFB /* TimeGaugeCell.xib */,
-				CF0FE45022BFAA9700F393E8 /* CircleMenueView.swift */,
-				CF0FE45422BFBB2300F393E8 /* CircleItemView.swift */,
+				CF0FE45022BFAA9700F393E8 /* CircleMenuView.swift */,
+				CF0FE45422BFBB2300F393E8 /* CircleMenuViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -620,12 +620,12 @@
 				4900787222BF5B8600FC345D /* HomeViewInput.swift in Sources */,
 				4900787622BF5B8600FC345D /* HomeRouterInput.swift in Sources */,
 				4900786F22BF5B8600FC345D /* HomePresenter.swift in Sources */,
-				CF0FE45522BFBB2300F393E8 /* CircleItemView.swift in Sources */,
+				CF0FE45522BFBB2300F393E8 /* CircleMenuViewCell.swift in Sources */,
 				4900787722BF5B8600FC345D /* HomeRouter.swift in Sources */,
 				CF7CB28822B9F5970075A83C /* RootRouter.swift in Sources */,
 				CFA7954E22BA391F00C55FFB /* TimeGaugeCell.swift in Sources */,
 				CFA7955122BB232A00C55FFB /* Util.swift in Sources */,
-				CF0FE45122BFAA9700F393E8 /* CircleMenueView.swift in Sources */,
+				CF0FE45122BFAA9700F393E8 /* CircleMenuView.swift in Sources */,
 				4900787022BF5B8600FC345D /* HomeViewOutput.swift in Sources */,
 				4900787522BF5B8600FC345D /* HomeInteractor.swift in Sources */,
 				4900787322BF5B8600FC345D /* HomeInteractorOutput.swift in Sources */,

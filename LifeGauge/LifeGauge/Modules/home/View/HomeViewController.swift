@@ -13,14 +13,11 @@ class HomeViewController: UIViewController
     // Property
     var output: HomeViewOutput!
     
-    private var timeGauges: [TimeGauge] = [] {
-        didSet {
-            homeCollectionView.reloadData()
-        }
-    }
+    let colors = [UIColor.red, UIColor.blue, UIColor.green, UIColor.cyan, UIColor.orange, UIColor.yellow, UIColor.brown, UIColor.magenta]
+    
+    private var timeGauges: [TimeGauge] = []
     
     // Outlet
-    @IBOutlet weak var homeCollectionView: UICollectionView!
     
     //------------------------------------------------------------//
     // MARK: -- View --
@@ -30,20 +27,13 @@ class HomeViewController: UIViewController
     {
         super.viewDidLoad()
         
-        // Configure collection view
-        homeCollectionView.register(UINib(nibName: TimeGaugeCell.identifier, bundle: nil), forCellWithReuseIdentifier: TimeGaugeCell.identifier)
-        homeCollectionView.dataSource = self
-        homeCollectionView.delegate = self
-        
-        Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(timerAction), userInfo: nil, repeats: true)
-        
         // Notify to presenter
         output.viewIsReady()
         output.fetchTimeGauges()
         
-        homeCollectionView.isHidden = true
         let circleView = CircleMenuView(frame: CGRect(x: 0, y: view.frame.height - view.frame.width/2, width: view.frame.width, height: view.frame.width))
-        circleView.set(topCircleWidth: 50, circleItemViewWidth: 40)
+        circleView.delegate = self
+        circleView.dataSource = self
         view.addSubview(circleView)
     }
     
@@ -51,13 +41,6 @@ class HomeViewController: UIViewController
     // MARK: -- Action --
     //------------------------------------------------------------//
     
-    @objc private func timerAction()
-    {
-        for cell in homeCollectionView.visibleCells {
-            guard let cell = cell as? TimeGaugeCell else { continue }
-            cell._update()
-        }
-    }
 }
 
 extension HomeViewController: HomeViewInput
@@ -78,41 +61,36 @@ extension HomeViewController: HomeViewInput
     }
 }
 
-extension HomeViewController: UICollectionViewDataSource
+extension HomeViewController: CircleMenuViewDataSource
 {
-    //------------------------------------------------------------//
-    // MARK: -- UICollectionViewDataSource --
-    //------------------------------------------------------------//
-    
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int
+    func circleMenuView(_ circleMenuView: CircleMenuView, cellForRowAt index: Int) -> CircleMenuViewCell
     {
-        return timeGauges.count
+        let itemView = circleMenuView.dequeueCircleItemView(for: index)
+        itemView.backgroundColor = colors[safe: index]
+        return itemView
     }
     
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell
+    func numberOfCircles(in circleMenuView: CircleMenuView) -> Int
     {
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: TimeGaugeCell.identifier, for: indexPath) as? TimeGaugeCell else { return UICollectionViewCell() }
-        guard let timeGauge = timeGauges[safe: indexPath.row] else { return cell }
-        cell.timeGauge = timeGauge
+        return colors.count
+    }
+}
+
+extension HomeViewController: CircleMenuViewDelegate
+{
+    //------------------------------------------------------------//
+    // MARK: -- CircleMenuViewDelegate --
+    //------------------------------------------------------------//
+    
+    func diameterForTopCircle(in circleMenuView: CircleMenuView) -> CGFloat {
+        return 50
+    }
+    
+    func diameterForCell(in circleMenuView: CircleMenuView) -> CGFloat {
+        return 40
+    }
+    
+    func update(_ radian: Double) {
         
-        return cell
-    }
-}
-
-extension HomeViewController: UICollectionViewDelegate
-{
-    //------------------------------------------------------------//
-    // MARK: -- UICollectionViewDelegate --
-    //------------------------------------------------------------//
-}
-
-extension HomeViewController: UICollectionViewDelegateFlowLayout
-{
-    //------------------------------------------------------------//
-    // MARK: -- UICollectionViewDelegateFlowLayout --
-    //------------------------------------------------------------//
-    
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: view.frame.width, height: 100)
     }
 }

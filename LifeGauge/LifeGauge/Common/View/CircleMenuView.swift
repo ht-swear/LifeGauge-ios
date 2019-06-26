@@ -11,6 +11,13 @@ import AudioToolbox
 
 protocol CircleMenuViewDelegate {
     func update(_ radian: Double)
+    func diameterForTopCircle(in circleMenuView: CircleMenuView) -> CGFloat
+    func diameterForCell(in circleMenuView: CircleMenuView) -> CGFloat
+}
+
+protocol CircleMenuViewDataSource {
+    func circleMenuView(_ circleMenuView: CircleMenuView, cellForRowAt index: Int) -> CircleMenuViewCell
+    func numberOfCircles(in circleMenuView: CircleMenuView) -> Int
 }
 
 class CircleMenuView: UIView
@@ -26,16 +33,27 @@ class CircleMenuView: UIView
     var innerView: UIView!
     var topCircleView: UIView!
     
-    let colors = [UIColor.red, UIColor.blue, UIColor.green, UIColor.cyan, UIColor.orange, UIColor.yellow, UIColor.brown, UIColor.magenta]
-    var circleItemViews: [CircleItemView] = []
+    var cells: [CircleMenuViewCell] = []
     
-    var delegate: CircleMenuViewDelegate?
+    var delegate: CircleMenuViewDelegate? {
+        didSet {
+            makeTopCircleAndCircleItems()
+        }
+    }
+    
+    var dataSource: CircleMenuViewDataSource? {
+        didSet {
+            createCells()
+        }
+    }
     
     var startPos: CGPoint?
     var endPos: CGPoint?
     
-    var topCircleWidth: CGFloat! = 30
-    var circleItemViewWidth: CGFloat! = 20
+    var diameterForTopCircle: CGFloat! = 30
+    var diameterForCell: CGFloat! = 20
+    
+    var numOfCircles: Int! = 0
     
     
     //------------------------------------------------------------//
@@ -57,14 +75,35 @@ class CircleMenuView: UIView
         fatalError("init(coder:) has not been implemented")
     }
     
-    func set(topCircleWidth: CGFloat, circleItemViewWidth: CGFloat)
+    private func createCells()
     {
-        // Set properties
-        self.topCircleWidth = topCircleWidth
-        self.circleItemViewWidth = circleItemViewWidth
+        // For error
+        guard let numOfCircles = dataSource?.numberOfCircles(in: self) else { return }
+        self.numOfCircles = numOfCircles
         
-        // Make circle item views
-        makeCircleItemViews()
+        // Create cells
+        for i in 0..<numOfCircles {
+            guard let cell = dataSource?.circleMenuView(self, cellForRowAt: i) else { return }
+            innerView.addSubview(cell)
+            
+            // Append cells
+            cells.append(cell)
+        }
+        
+        innerView.bringSubviewToFront(topCircleView)
+    }
+    
+    private func makeTopCircleAndCircleItems()
+    {
+        // For error
+        guard let diameterForTopCircle = delegate?.diameterForTopCircle(in: self) else { return }
+        guard let diameterForCell = delegate?.diameterForCell(in: self) else { return }
+        
+        // Set properties
+        self.diameterForTopCircle = diameterForTopCircle
+        self.diameterForCell = diameterForCell
+        
+        // Make top circle view
         makeTopCircleView()
     }
     
@@ -123,33 +162,42 @@ class CircleMenuView: UIView
     }
     
     //------------------------------------------------------------//
-    // MARK: -- Circle make --
+    // MARK: -- Public methods --
     //------------------------------------------------------------//
     
-    private func makeCircleItemViews()
+    public func dequeueCircleItemView(for index: Int) -> CircleMenuViewCell
     {
-        for i in 1..<colors.count+1 {
-            // Calculate first radian
-            let radian = Double.pi*2 / Double(colors.count) * Double(i)
-            let pos = calculatePos(radian: radian)
-            
-            // Calculate frame
-            let x = pos.x - circleItemViewWidth/2
-            let y = pos.y - circleItemViewWidth/2
-            let frame = CGRect(x: x, y: y, width: circleItemViewWidth, height: circleItemViewWidth)
-            
-            // Create circle item view
-            let circleItemView = CircleItemView(frame: frame)
-            circleItemView.set(color: colors[safe: i-1], radian: radian)
-            circleItemView.delegate = self
-            circleItemView.layer.cornerRadius = circleItemViewWidth/2
-            circleItemView.layer.masksToBounds = true
-            innerView.addSubview(circleItemView)
-            
-            // Append circle item view
-            circleItemViews.append(circleItemView)
-        }
+        // Calculate position with index
+        let radian = Double.pi*2 / Double(numOfCircles) * Double(index)
+        let pos = calculatePos(radian: radian)
+        
+        // Calculate frame
+        let x = pos.x - diameterForCell/2
+        let y = pos.y - diameterForCell/2
+        let frame = CGRect(x: x, y: y, width: diameterForCell, height: diameterForCell)
+        
+        // Create circle item view
+        let circleItemView = CircleMenuViewCell(frame: frame)
+        circleItemView.radian = radian
+        circleItemView.delegate = self
+        circleItemView.layer.cornerRadius = diameterForCell/2
+        circleItemView.layer.masksToBounds = true
+        return circleItemView
     }
+    
+    public func cellForRow(at index: Int) -> CircleMenuViewCell?
+    {
+        return cells[safe: index]
+    }
+    
+    public func numberOfCircles() -> Int
+    {
+        return numOfCircles
+    }
+    
+    //------------------------------------------------------------//
+    // MARK: -- Circle make --
+    //------------------------------------------------------------//
     
     private func makeTopCircleView()
     {
@@ -158,12 +206,12 @@ class CircleMenuView: UIView
         let r = innerView.frame.width/2 - 64
         
         // Create top circle view
-        let frame = CGRect(x: center.x - topCircleWidth/2, y: center.y - topCircleWidth/2 - r, width: topCircleWidth, height: topCircleWidth)
+        let frame = CGRect(x: center.x - diameterForTopCircle/2, y: center.y - diameterForTopCircle/2 - r, width: diameterForTopCircle, height: diameterForTopCircle)
         topCircleView = UIView(frame: frame)
-        topCircleView.layer.cornerRadius = topCircleWidth/2
+        topCircleView.layer.cornerRadius = diameterForTopCircle/2
         topCircleView.layer.masksToBounds = true
         topCircleView.layer.borderColor = UIColor.black.cgColor
-        topCircleView.layer.borderWidth = (topCircleWidth - circleItemViewWidth)/2
+        topCircleView.layer.borderWidth = (diameterForTopCircle - diameterForCell)/2
         innerView.addSubview(topCircleView)
     }
     
@@ -173,9 +221,9 @@ class CircleMenuView: UIView
     
     private func updateCircleItemsPos(with diffRadian: Double, duration: TimeInterval)
     {
-        for itemView in circleItemViews {
+        for cell in cells {
             // Calcurate new postion by diff radian
-            guard let radian = itemView.radian else { return }
+            guard let radian = cell.radian else { return }
             let newRadian = radian + diffRadian
             
             // For update with animation
@@ -188,21 +236,20 @@ class CircleMenuView: UIView
                         
                         // Add animation key frame
                         UIView.addKeyframe(withRelativeStartTime: Double(i)*0.1, relativeDuration: duration/10, animations: {
-                            itemView.center = CGPoint(x: pos.x, y: pos.y)
+                            cell.center = CGPoint(x: pos.x, y: pos.y)
                         })
                     }
-                }) { (finished) in
-                }
+                })
                 // Play sound
                 playSound()
             }
             // For update with drag
             else {
                 let pos = calculatePos(radian: newRadian)
-                itemView.center = CGPoint(x: pos.x, y: pos.y)
+                cell.center = CGPoint(x: pos.x, y: pos.y)
             }
             // Update item view radian
-            itemView.radian = newRadian
+            cell.radian = newRadian
         }
         
         // Notifiy to delegate
@@ -217,7 +264,7 @@ class CircleMenuView: UIView
     private func calculateRadianFromNearestPoint() -> Double?
     {
         // Search nearest circle item from top center
-        guard let nearestCircle = circleItemViews.sorted(by: {( _distance(from: $0.center, to: topCircleView.center) < _distance(from: $1.center, to: topCircleView.center) )}).first else { return nil }
+        guard let nearestCircle = cells.sorted(by: {( _distance(from: $0.center, to: topCircleView.center) < _distance(from: $1.center, to: topCircleView.center) )}).first else { return nil }
         
         // Calculate diff radian
         guard let radian = calculateDiffRadian(from: nearestCircle.center, to: topCircleView.center) else { return nil }
@@ -274,16 +321,16 @@ class CircleMenuView: UIView
     }
 }
 
-extension CircleMenuView: CircleItemViewDelegate
+extension CircleMenuView: CircleMenuViewCellDelegate
 {
     //------------------------------------------------------------//
     // MARK: -- CircleItemViewDelegate --
     //------------------------------------------------------------//
     
-    func tap(view: CircleItemView)
+    func didSelect(cell: CircleMenuViewCell)
     {
         // Calculate diff from tapped view to top circle
-        guard let diffRadian = calculateDiffRadian(from: view.center, to: topCircleView.center) else { return }
+        guard let diffRadian = calculateDiffRadian(from: cell.center, to: topCircleView.center) else { return }
         
         // Update circle items position with radian
         updateCircleItemsPos(with: diffRadian, duration: 0.2)

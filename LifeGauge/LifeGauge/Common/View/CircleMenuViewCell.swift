@@ -8,16 +8,15 @@
 
 import UIKit
 
-protocol CircleItemViewDelegate {
-    func tap(view: CircleItemView)
+protocol CircleMenuViewCellDelegate {
+    func didSelect(cell: CircleMenuViewCell)
 }
 
-class CircleItemView: UIView
+class CircleMenuViewCell: UIView
 {
-    var color: UIColor?
     var radian: Double?
     
-    var delegate: CircleItemViewDelegate?
+    var delegate: CircleMenuViewCellDelegate?
     
     override init(frame: CGRect)
     {
@@ -34,16 +33,9 @@ class CircleItemView: UIView
         fatalError("init(coder:) has not been implemented")
     }
     
-    func set(color: UIColor?, radian: Double?)
-    {
-        self.color = color
-        self.radian = radian
-        backgroundColor = color
-    }
-    
     @objc private func tapAction()
     {
         // Notify to delegate
-        delegate?.tap(view: self)
+        delegate?.didSelect(cell: self)
     }
 }
