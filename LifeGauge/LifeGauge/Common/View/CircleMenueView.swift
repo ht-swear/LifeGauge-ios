@@ -177,16 +177,28 @@ class CircleMenuView: UIView
             // Calcurate new postion by diff radian
             guard let radian = itemView.radian else { return }
             let newRadian = radian + diffRadian
-            let pos = calculatePos(radian: newRadian)
             
-            // Update position
+            // For update with animation
             if duration > 0.0 {
-                UIView.animate(withDuration: duration, animations: {
-                    itemView.center = CGPoint(x: pos.x, y: pos.y)
-                })
+                UIView.animateKeyframes(withDuration: duration, delay: 0.0, options: [], animations: {
+                    // Separate update into 10 animations
+                    for i in 1..<11 {
+                        // Calculate diff radian
+                        let pos = self.calculatePos(radian: radian + diffRadian/10*Double(i))
+                        
+                        // Add animation key frame
+                        UIView.addKeyframe(withRelativeStartTime: Double(i)*0.1, relativeDuration: duration/10, animations: {
+                            itemView.center = CGPoint(x: pos.x, y: pos.y)
+                        })
+                    }
+                }) { (finished) in
+                }
+                // Play sound
                 playSound()
             }
+            // For update with drag
             else {
+                let pos = calculatePos(radian: newRadian)
                 itemView.center = CGPoint(x: pos.x, y: pos.y)
             }
             // Update item view radian
@@ -274,6 +286,6 @@ extension CircleMenuView: CircleItemViewDelegate
         guard let diffRadian = calculateDiffRadian(from: view.center, to: topCircleView.center) else { return }
         
         // Update circle items position with radian
-        updateCircleItemsPos(with: diffRadian, duration: 0.15)
+        updateCircleItemsPos(with: diffRadian, duration: 0.2)
     }
 }
