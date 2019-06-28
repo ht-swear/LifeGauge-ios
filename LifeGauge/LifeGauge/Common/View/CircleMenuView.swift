@@ -10,14 +10,16 @@ import UIKit
 import AudioToolbox
 
 protocol CircleMenuViewDelegate {
-    func update(_ radian: Double)
     func diameterForTopCircle(in circleMenuView: CircleMenuView) -> CGFloat
     func diameterForCell(in circleMenuView: CircleMenuView) -> CGFloat
 }
 
 protocol CircleMenuViewDataSource {
     func circleMenuView(_ circleMenuView: CircleMenuView, cellForRowAt index: Int) -> CircleMenuViewCell
-    func numberOfCircles(in circleMenuView: CircleMenuView) -> Int
+}
+
+protocol CircleMenuViewLayoutDelegate {
+    func didUpdate(radian: Double)
 }
 
 class CircleMenuView: UIView
@@ -47,6 +49,8 @@ class CircleMenuView: UIView
         }
     }
     
+    var layoutDelegate: CircleMenuViewLayoutDelegate?
+    
     var startPos: CGPoint?
     var endPos: CGPoint?
     
@@ -75,12 +79,8 @@ class CircleMenuView: UIView
         fatalError("init(coder:) has not been implemented")
     }
     
-    private func createCells()
+    func createCells()
     {
-        // For error
-        guard let numOfCircles = dataSource?.numberOfCircles(in: self) else { return }
-        self.numOfCircles = numOfCircles
-        
         // Create cells
         for i in 0..<numOfCircles {
             guard let cell = dataSource?.circleMenuView(self, cellForRowAt: i) else { return }
@@ -93,7 +93,7 @@ class CircleMenuView: UIView
         innerView.bringSubviewToFront(topCircleView)
     }
     
-    private func makeTopCircleAndCircleItems()
+    func makeTopCircleAndCircleItems()
     {
         // For error
         guard let diameterForTopCircle = delegate?.diameterForTopCircle(in: self) else { return }
@@ -253,7 +253,7 @@ class CircleMenuView: UIView
         }
         
         // Notifiy to delegate
-        delegate?.update(diffRadian)
+        layoutDelegate?.didUpdate(radian: diffRadian)
     }
     
     

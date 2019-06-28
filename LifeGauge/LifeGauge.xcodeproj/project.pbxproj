@@ -35,6 +35,8 @@
 		CF55413622B8AD0C00242B31 /* loginRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4930C28622B7649600DE2162 /* loginRouterTests.swift */; };
 		CF7CB28622B8B1110075A83C /* TimeGauge.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7CB28522B8B1110075A83C /* TimeGauge.swift */; };
 		CF7CB28822B9F5970075A83C /* RootRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7CB28722B9F5970075A83C /* RootRouter.swift */; };
+		CF9F15A022C44BD10058A55C /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9F159F22C44BD10058A55C /* CircleView.swift */; };
+		CF9F15A222C44EE70058A55C /* CircleViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9F15A122C44EE70058A55C /* CircleViewCell.swift */; };
 		CFA7954E22BA391F00C55FFB /* TimeGaugeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA7954C22BA391F00C55FFB /* TimeGaugeCell.swift */; };
 		CFA7954F22BA391F00C55FFB /* TimeGaugeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CFA7954D22BA391F00C55FFB /* TimeGaugeCell.xib */; };
 		CFA7955122BB232A00C55FFB /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA7955022BB232A00C55FFB /* Util.swift */; };
@@ -101,6 +103,8 @@
 		CF0FE45422BFBB2300F393E8 /* CircleMenuViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleMenuViewCell.swift; sourceTree = "<group>"; };
 		CF7CB28522B8B1110075A83C /* TimeGauge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeGauge.swift; sourceTree = "<group>"; };
 		CF7CB28722B9F5970075A83C /* RootRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootRouter.swift; sourceTree = "<group>"; };
+		CF9F159F22C44BD10058A55C /* CircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
+		CF9F15A122C44EE70058A55C /* CircleViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleViewCell.swift; sourceTree = "<group>"; };
 		CFA7954C22BA391F00C55FFB /* TimeGaugeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeGaugeCell.swift; sourceTree = "<group>"; };
 		CFA7954D22BA391F00C55FFB /* TimeGaugeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimeGaugeCell.xib; sourceTree = "<group>"; };
 		CFA7955022BB232A00C55FFB /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
@@ -352,6 +356,8 @@
 			children = (
 				CFA7954C22BA391F00C55FFB /* TimeGaugeCell.swift */,
 				CFA7954D22BA391F00C55FFB /* TimeGaugeCell.xib */,
+				CF9F159F22C44BD10058A55C /* CircleView.swift */,
+				CF9F15A122C44EE70058A55C /* CircleViewCell.swift */,
 				CF0FE45022BFAA9700F393E8 /* CircleMenuView.swift */,
 				CF0FE45422BFBB2300F393E8 /* CircleMenuViewCell.swift */,
 			);
@@ -616,10 +622,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF9F15A022C44BD10058A55C /* CircleView.swift in Sources */,
 				4900787422BF5B8600FC345D /* HomeInteractorInput.swift in Sources */,
 				4900787222BF5B8600FC345D /* HomeViewInput.swift in Sources */,
 				4900787622BF5B8600FC345D /* HomeRouterInput.swift in Sources */,
 				4900786F22BF5B8600FC345D /* HomePresenter.swift in Sources */,
+				CF9F15A222C44EE70058A55C /* CircleViewCell.swift in Sources */,
 				CF0FE45522BFBB2300F393E8 /* CircleMenuViewCell.swift in Sources */,
 				4900787722BF5B8600FC345D /* HomeRouter.swift in Sources */,
 				CF7CB28822B9F5970075A83C /* RootRouter.swift in Sources */,
@@ -814,7 +822,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 396285LGRJ;
 				INFOPLIST_FILE = LifeGauge/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -833,7 +841,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 396285LGRJ;
 				INFOPLIST_FILE = LifeGauge/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

@@ -31,7 +31,8 @@ class HomeViewController: UIViewController
         output.viewIsReady()
         output.fetchTimeGauges()
         
-        let circleView = CircleMenuView(frame: CGRect(x: 0, y: view.frame.height - view.frame.width/2, width: view.frame.width, height: view.frame.width))
+        //let circleView = CircleMenuView(frame: CGRect(x: 0, y: view.frame.height - view.frame.width/2, width: view.frame.width, height: view.frame.width))
+        let circleView = CircleView(frame: view.frame)
         circleView.delegate = self
         circleView.dataSource = self
         view.addSubview(circleView)
@@ -61,23 +62,34 @@ extension HomeViewController: HomeViewInput
     }
 }
 
-extension HomeViewController: CircleMenuViewDataSource
+extension HomeViewController: CircleViewDataSource
 {
+    func circleView(_ circlView: CircleView, cellForRowAt index: Int) -> CircleViewCell
+    {
+        let cell = circlView.dequeueCircleViewCell(for: index)
+        cell.backgroundColor = colors[safe: index]
+        return cell
+    }
+    
+    func numberOfCircles(in circleView: CircleView) -> Int
+    {
+        return colors.count
+    }
+    
     func circleMenuView(_ circleMenuView: CircleMenuView, cellForRowAt index: Int) -> CircleMenuViewCell
     {
         let itemView = circleMenuView.dequeueCircleItemView(for: index)
         itemView.backgroundColor = colors[safe: index]
         return itemView
     }
-    
-    func numberOfCircles(in circleMenuView: CircleMenuView) -> Int
-    {
-        return colors.count
-    }
 }
 
-extension HomeViewController: CircleMenuViewDelegate
+extension HomeViewController: CircleViewDelegate
 {
+    func sizeForCell(in circleView: CircleView) -> CGSize {
+        return CGSize(width: view.frame.width - 32, height: view.frame.width - 32)
+    }
+    
     //------------------------------------------------------------//
     // MARK: -- CircleMenuViewDelegate --
     //------------------------------------------------------------//
@@ -88,9 +100,5 @@ extension HomeViewController: CircleMenuViewDelegate
     
     func diameterForCell(in circleMenuView: CircleMenuView) -> CGFloat {
         return 40
-    }
-    
-    func update(_ radian: Double) {
-        
     }
 }
