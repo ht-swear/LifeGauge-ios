@@ -10,6 +10,7 @@ import UIKit
 
 protocol CircleViewDelegate: CircleMenuViewDelegate {
     func sizeForCell(in circleView: CircleView) -> CGSize
+    func circleView(_ circleView: CircleView, didSelectRowAt index: Int)
 }
 
 protocol CircleViewDataSource: CircleMenuViewDataSource {
@@ -45,15 +46,15 @@ class CircleView: UIView
         }
     }
     
-    var cells: [CircleViewCell] = []
-    var menuView: CircleMenuView!
+    private var cells: [CircleViewCell] = []
+    private var menuView: CircleMenuView!
     
     var cellSize: CGSize! = CGSize(width: 100, height: 100)
     
     var numOfCircles: Int! = 0
     
     //------------------------------------------------------------//
-    // MARK: -- Public methods --
+    // MARK: -- Initialize --
     //------------------------------------------------------------//
     
     override init(frame: CGRect)
@@ -106,7 +107,26 @@ class CircleView: UIView
         
         let cell = CircleViewCell(frame: frame)
         cell.radian = radian
+        cell.delegate = self
         return cell
+    }
+    
+    public func reloadData()
+    {
+        // Reset cells
+        cells.forEach({ $0.removeFromSuperview() })
+        cells = []
+        
+        // Reset num of circles
+        guard let numOfCircles = dataSource?.numberOfCircles(in: self) else { return }
+        self.numOfCircles = numOfCircles
+        menuView.numOfCircles = numOfCircles
+        
+        // Create cells
+        createCells()
+        
+        // Reload menu view
+        menuView.reloadData()
     }
     
     //------------------------------------------------------------//
@@ -162,8 +182,27 @@ class CircleView: UIView
     }
 }
 
+extension CircleView: CircleViewCellDelegate
+{
+    //------------------------------------------------------------//
+    // MARK: -- CircleViewCellDelegate --
+    //------------------------------------------------------------//
+    
+    func didSelect(cell: CircleViewCell)
+    {
+        for i in 0..<cells.count {
+            guard let c = cells[safe: i], c == cell else { continue }
+            delegate?.circleView(self, didSelectRowAt: i)
+        }
+    }
+}
+
 extension CircleView: CircleMenuViewLayoutDelegate
 {
+    //------------------------------------------------------------//
+    // MARK: -- CircleMenuViewLayoutDelegate --
+    //------------------------------------------------------------//
+    
     func didUpdate(radian: Double)
     {
         updateCircleItemsPos(with: radian, duration: 0.0)

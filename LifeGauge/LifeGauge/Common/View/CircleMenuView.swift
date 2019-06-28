@@ -39,7 +39,7 @@ class CircleMenuView: UIView
     
     var delegate: CircleMenuViewDelegate? {
         didSet {
-            makeTopCircleAndCircleItems()
+            makeTopCircleView()
         }
     }
     
@@ -79,7 +79,7 @@ class CircleMenuView: UIView
         fatalError("init(coder:) has not been implemented")
     }
     
-    func createCells()
+    private func createCells()
     {
         // Create cells
         for i in 0..<numOfCircles {
@@ -91,20 +91,6 @@ class CircleMenuView: UIView
         }
         
         innerView.bringSubviewToFront(topCircleView)
-    }
-    
-    func makeTopCircleAndCircleItems()
-    {
-        // For error
-        guard let diameterForTopCircle = delegate?.diameterForTopCircle(in: self) else { return }
-        guard let diameterForCell = delegate?.diameterForCell(in: self) else { return }
-        
-        // Set properties
-        self.diameterForTopCircle = diameterForTopCircle
-        self.diameterForCell = diameterForCell
-        
-        // Make top circle view
-        makeTopCircleView()
     }
     
     //------------------------------------------------------------//
@@ -185,6 +171,18 @@ class CircleMenuView: UIView
         return circleItemView
     }
     
+    public func reloadData()
+    {
+        cells.forEach({ $0.removeFromSuperview() })
+        cells = []
+        
+        // Make top circle view
+        makeTopCircleView()
+        
+        // Create cells
+        createCells()
+    }
+    
     public func cellForRow(at index: Int) -> CircleMenuViewCell?
     {
         return cells[safe: index]
@@ -201,6 +199,14 @@ class CircleMenuView: UIView
     
     private func makeTopCircleView()
     {
+        // For error
+        guard let diameterForTopCircle = delegate?.diameterForTopCircle(in: self) else { return }
+        guard let diameterForCell = delegate?.diameterForCell(in: self) else { return }
+        
+        // Set properties
+        self.diameterForTopCircle = diameterForTopCircle
+        self.diameterForCell = diameterForCell
+        
         // Set circle center and radius
         let center = CGPoint(x: innerView.frame.width/2, y: innerView.frame.height/2)
         let r = innerView.frame.width/2 - 64
@@ -292,6 +298,12 @@ class CircleMenuView: UIView
         // Calculate diff radian
         let diffRadian = endRadian - startRadian
         return diffRadian != 0 ? diffRadian * -1 : nil
+    }
+    
+    private func calculateRadian(p: CGPoint) -> Double
+    {
+        let center = CGPoint(x: innerView.frame.width/2, y: innerView.frame.height/2)
+        return atan2(Double(p.y - center.y), Double(p.x - center.x))
     }
     
     //------------------------------------------------------------//
