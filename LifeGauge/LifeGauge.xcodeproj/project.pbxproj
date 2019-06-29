@@ -37,6 +37,10 @@
 		CFA7954E22BA391F00C55FFB /* TimeGaugeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA7954C22BA391F00C55FFB /* TimeGaugeCell.swift */; };
 		CFA7954F22BA391F00C55FFB /* TimeGaugeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CFA7954D22BA391F00C55FFB /* TimeGaugeCell.xib */; };
 		CFA7955122BB232A00C55FFB /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA7955022BB232A00C55FFB /* Util.swift */; };
+		CFCE583322C7AE4C00309892 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCE582F22C7AE4C00309892 /* CircleView.swift */; };
+		CFCE583422C7AE4C00309892 /* CircleMenuViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCE583022C7AE4C00309892 /* CircleMenuViewCell.swift */; };
+		CFCE583522C7AE4C00309892 /* CircleViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCE583122C7AE4C00309892 /* CircleViewCell.swift */; };
+		CFCE583622C7AE4C00309892 /* CircleMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCE583222C7AE4C00309892 /* CircleMenuView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -102,6 +106,10 @@
 		CFA7954C22BA391F00C55FFB /* TimeGaugeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeGaugeCell.swift; sourceTree = "<group>"; };
 		CFA7954D22BA391F00C55FFB /* TimeGaugeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimeGaugeCell.xib; sourceTree = "<group>"; };
 		CFA7955022BB232A00C55FFB /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
+		CFCE582F22C7AE4C00309892 /* CircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
+		CFCE583022C7AE4C00309892 /* CircleMenuViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleMenuViewCell.swift; sourceTree = "<group>"; };
+		CFCE583122C7AE4C00309892 /* CircleViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleViewCell.swift; sourceTree = "<group>"; };
+		CFCE583222C7AE4C00309892 /* CircleMenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleMenuView.swift; sourceTree = "<group>"; };
 		D865F5BBEC1C78615141C6CA /* Pods-LifeGaugeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LifeGaugeUITests.debug.xcconfig"; path = "Target Support Files/Pods-LifeGaugeUITests/Pods-LifeGaugeUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		DA4309DE900C503D87DA6A25 /* Pods_LifeGaugeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LifeGaugeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -349,6 +357,10 @@
 		CFA7955322BDDCF500C55FFB /* View */ = {
 			isa = PBXGroup;
 			children = (
+				CFCE583222C7AE4C00309892 /* CircleMenuView.swift */,
+				CFCE583022C7AE4C00309892 /* CircleMenuViewCell.swift */,
+				CFCE582F22C7AE4C00309892 /* CircleView.swift */,
+				CFCE583122C7AE4C00309892 /* CircleViewCell.swift */,
 				CFA7954C22BA391F00C55FFB /* TimeGaugeCell.swift */,
 				CFA7954D22BA391F00C55FFB /* TimeGaugeCell.xib */,
 			);
@@ -614,20 +626,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFCE583522C7AE4C00309892 /* CircleViewCell.swift in Sources */,
 				4900787422BF5B8600FC345D /* HomeInteractorInput.swift in Sources */,
 				4900787222BF5B8600FC345D /* HomeViewInput.swift in Sources */,
 				4900787622BF5B8600FC345D /* HomeRouterInput.swift in Sources */,
 				4900786F22BF5B8600FC345D /* HomePresenter.swift in Sources */,
 				4900787722BF5B8600FC345D /* HomeRouter.swift in Sources */,
 				CF7CB28822B9F5970075A83C /* RootRouter.swift in Sources */,
+				CFCE583422C7AE4C00309892 /* CircleMenuViewCell.swift in Sources */,
 				CFA7954E22BA391F00C55FFB /* TimeGaugeCell.swift in Sources */,
 				CFA7955122BB232A00C55FFB /* Util.swift in Sources */,
+				CFCE583322C7AE4C00309892 /* CircleView.swift in Sources */,
 				4900787022BF5B8600FC345D /* HomeViewOutput.swift in Sources */,
 				4900787522BF5B8600FC345D /* HomeInteractor.swift in Sources */,
 				4900787322BF5B8600FC345D /* HomeInteractorOutput.swift in Sources */,
 				4900787122BF5B8600FC345D /* HomeViewController.swift in Sources */,
 				CF7CB28622B8B1110075A83C /* TimeGauge.swift in Sources */,
 				4930C24E22B7566300DE2162 /* AppDelegate.swift in Sources */,
+				CFCE583622C7AE4C00309892 /* CircleMenuView.swift in Sources */,
 				49DA776622BBEDBC00E32A9D /* R.generated.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

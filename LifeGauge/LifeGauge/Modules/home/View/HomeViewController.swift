@@ -13,14 +13,13 @@ class HomeViewController: UIViewController
     // Property
     var output: HomeViewOutput!
     
-    private var timeGauges: [TimeGauge] = [] {
-        didSet {
-            homeCollectionView.reloadData()
-        }
-    }
+    var colors = [UIColor.red, UIColor.blue, UIColor.green, UIColor.cyan]
+    
+    private var timeGauges: [TimeGauge] = []
+    
+    private var circleView: CircleView?
     
     // Outlet
-    @IBOutlet weak var homeCollectionView: UICollectionView!
     
     //------------------------------------------------------------//
     // MARK: -- View --
@@ -30,29 +29,41 @@ class HomeViewController: UIViewController
     {
         super.viewDidLoad()
         
-        // Configure collection view
-        homeCollectionView.register(UINib(nibName: TimeGaugeCell.identifier, bundle: nil), forCellWithReuseIdentifier: TimeGaugeCell.identifier)
-        homeCollectionView.dataSource = self
-        homeCollectionView.delegate = self
-        
-        Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(timerAction), userInfo: nil, repeats: true)
-        
         // Notify to presenter
         output.viewIsReady()
         output.fetchTimeGauges()
+        
+        //let circleView = CircleMenuView(frame: CGRect(x: 0, y: view.frame.height - view.frame.width/2, width: view.frame.width, height: view.frame.width))
+        circleView = CircleView(frame: view.frame)
+        circleView?.delegate = self
+        circleView?.dataSource = self
+        view.addSubview(circleView!)
+    }
+    
+    override func viewWillAppear(_ animated: Bool)
+    {
+        // Invoke super
+        super.viewWillAppear(animated)
+        
+        updateNavigationItem()
+    }
+    
+    private func updateNavigationItem()
+    {
+        let leftItem = UIBarButtonItem(barButtonSystemItem: .refresh, target: self, action: #selector(refreshAction))
+        self.navigationItem.leftBarButtonItem = leftItem
     }
     
     //------------------------------------------------------------//
     // MARK: -- Action --
     //------------------------------------------------------------//
     
-    @objc private func timerAction()
+    @objc private func refreshAction()
     {
-        for cell in homeCollectionView.visibleCells {
-            guard let cell = cell as? TimeGaugeCell else { continue }
-            cell._update()
-        }
+        colors = [UIColor.red, UIColor.blue, UIColor.green, UIColor.cyan, UIColor.orange, UIColor.yellow, UIColor.brown, UIColor.magenta]
+        circleView?.reloadData()
     }
+    
 }
 
 extension HomeViewController: HomeViewInput
@@ -73,41 +84,47 @@ extension HomeViewController: HomeViewInput
     }
 }
 
-extension HomeViewController: UICollectionViewDataSource
+extension HomeViewController: CircleViewDataSource
 {
-    //------------------------------------------------------------//
-    // MARK: -- UICollectionViewDataSource --
-    //------------------------------------------------------------//
-    
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int
+    func circleView(_ circlView: CircleView, cellForRowAt index: Int) -> CircleViewCell
     {
-        return timeGauges.count
+        let cell = circlView.dequeueCircleViewCell(for: index)
+        cell.backgroundColor = colors[safe: index]
+        return cell
     }
     
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell
+    func numberOfCircles(in circleView: CircleView) -> Int
     {
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: TimeGaugeCell.identifier, for: indexPath) as? TimeGaugeCell else { return UICollectionViewCell() }
-        guard let timeGauge = timeGauges[safe: indexPath.row] else { return cell }
-        cell.timeGauge = timeGauge
-        
+        return colors.count
+    }
+    
+    func circleMenuView(_ circleMenuView: CircleMenuView, cellForRowAt index: Int) -> CircleMenuViewCell
+    {
+        let cell = circleMenuView.dequeueCircleItemView(for: index)
+        cell.backgroundColor = colors[safe: index]
         return cell
     }
 }
 
-extension HomeViewController: UICollectionViewDelegate
+extension HomeViewController: CircleViewDelegate
 {
     //------------------------------------------------------------//
-    // MARK: -- UICollectionViewDelegate --
-    //------------------------------------------------------------//
-}
-
-extension HomeViewController: UICollectionViewDelegateFlowLayout
-{
-    //------------------------------------------------------------//
-    // MARK: -- UICollectionViewDelegateFlowLayout --
+    // MARK: -- CircleMenuViewDelegate --
     //------------------------------------------------------------//
     
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: view.frame.width, height: 100)
+    func circleView(_ circleView: CircleView, didSelectRowAt index: Int)
+    {
+    }
+    
+    func sizeForCell(in circleView: CircleView) -> CGSize {
+        return CGSize(width: view.frame.width - 32, height: view.frame.width - 32)
+    }
+    
+    func diameterForTopCircle(in circleMenuView: CircleMenuView) -> CGFloat {
+        return 50
+    }
+    
+    func diameterForCell(in circleMenuView: CircleMenuView) -> CGFloat {
+        return 40
     }
 }
