@@ -36,6 +36,12 @@ $ sh scripts/setup.sh
 
 ### ファイル作成
 [こいつ](https://qiita.com/YKEI_mrn/items/d1f79ceddf6e009fdcd0)使って、ファイル自動生成して管理してみたい
+テンプレート使ったModule生成用コマンド
+
+``` bash
+$ bundle exec generamba gen [Module_name] swifty_viper
+```
+[Module_name] は大文字で始める
 
 ### タスク管理
 GitHub Projectを使って開発タスクの管理を行なっています。<br>
