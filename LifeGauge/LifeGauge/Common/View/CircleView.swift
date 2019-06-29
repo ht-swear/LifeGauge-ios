@@ -33,16 +33,11 @@ class CircleView: UIView
     
     var dataSource: CircleViewDataSource? {
         didSet {
-            // Set num of circles
-            guard let numOfCircles = dataSource?.numberOfCircles(in: self) else { return }
-            self.numOfCircles = numOfCircles
-            menuView.numOfCircles = numOfCircles
+            // Create cells
+            createCells()
             
             // Set menu view data source
             menuView.dataSource = dataSource
-            
-            // Create cells
-            createCells()
         }
     }
     
@@ -51,7 +46,11 @@ class CircleView: UIView
     
     var cellSize: CGSize! = CGSize(width: 100, height: 100)
     
-    var numOfCircles: Int! = 0
+    var numOfCircles: Int! = 0 {
+        didSet {
+            menuView.numOfCircles = numOfCircles
+        }
+    }
     
     //------------------------------------------------------------//
     // MARK: -- Initialize --
@@ -78,6 +77,7 @@ class CircleView: UIView
     
     private func createCells()
     {
+        // Set num of circles
         guard let numOfCircles = dataSource?.numberOfCircles(in: self) else { return }
         self.numOfCircles = numOfCircles
         
@@ -117,16 +117,16 @@ class CircleView: UIView
         cells.forEach({ $0.removeFromSuperview() })
         cells = []
         
-        // Reset num of circles
-        guard let numOfCircles = dataSource?.numberOfCircles(in: self) else { return }
-        self.numOfCircles = numOfCircles
-        menuView.numOfCircles = numOfCircles
-        
         // Create cells
         createCells()
         
         // Reload menu view
         menuView.reloadData()
+    }
+    
+    public func cellForRow(at index: Int) -> CircleViewCell?
+    {
+        return cells[safe: index]
     }
     
     //------------------------------------------------------------//
@@ -166,7 +166,7 @@ class CircleView: UIView
     }
     
     //------------------------------------------------------------//
-    // MARK: -- Public methods --
+    // MARK: -- Pivate methods --
     //------------------------------------------------------------//
     
     private func calculatePos(radian: Double) -> (x: CGFloat, y: CGFloat)

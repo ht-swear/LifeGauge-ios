@@ -51,8 +51,8 @@ class CircleMenuView: UIView
     
     var layoutDelegate: CircleMenuViewLayoutDelegate?
     
-    var startPos: CGPoint?
-    var endPos: CGPoint?
+    private var startPos: CGPoint?
+    private var endPos: CGPoint?
     
     var diameterForTopCircle: CGFloat! = 30
     var diameterForCell: CGFloat! = 20
