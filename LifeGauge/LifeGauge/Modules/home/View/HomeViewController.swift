@@ -40,6 +40,12 @@ class HomeViewController: UIViewController
         // Notify to presenter
         output.viewIsReady()
         output.fetchTimeGauges()
+        
+        homeCollectionView.isHidden = true
+        let circleGauge = CircleGaugeView(frame: view.frame, from: .top, angleAmount: 270, thickenss: 32, backgoundColor: UIColor.darkGray)
+        circleGauge.backgroundColor = UIColor.white
+        view.addSubview(circleGauge)
+        
     }
     
     //------------------------------------------------------------//

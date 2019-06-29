@@ -36,6 +36,7 @@
 		CFA7954E22BA391F00C55FFB /* TimeGaugeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA7954C22BA391F00C55FFB /* TimeGaugeCell.swift */; };
 		CFA7954F22BA391F00C55FFB /* TimeGaugeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CFA7954D22BA391F00C55FFB /* TimeGaugeCell.xib */; };
 		CFA7955122BB232A00C55FFB /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA7955022BB232A00C55FFB /* Util.swift */; };
+		CFCE582E22C66DC100309892 /* CircleGaugeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCE582D22C66DC100309892 /* CircleGaugeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,6 +101,7 @@
 		CFA7954C22BA391F00C55FFB /* TimeGaugeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeGaugeCell.swift; sourceTree = "<group>"; };
 		CFA7954D22BA391F00C55FFB /* TimeGaugeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimeGaugeCell.xib; sourceTree = "<group>"; };
 		CFA7955022BB232A00C55FFB /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
+		CFCE582D22C66DC100309892 /* CircleGaugeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleGaugeView.swift; sourceTree = "<group>"; };
 		D865F5BBEC1C78615141C6CA /* Pods-LifeGaugeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LifeGaugeUITests.debug.xcconfig"; path = "Target Support Files/Pods-LifeGaugeUITests/Pods-LifeGaugeUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		DA4309DE900C503D87DA6A25 /* Pods_LifeGaugeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LifeGaugeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -348,6 +350,7 @@
 			children = (
 				CFA7954C22BA391F00C55FFB /* TimeGaugeCell.swift */,
 				CFA7954D22BA391F00C55FFB /* TimeGaugeCell.xib */,
+				CFCE582D22C66DC100309892 /* CircleGaugeView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -616,6 +619,7 @@
 				4900786F22BF5B8600FC345D /* HomePresenter.swift in Sources */,
 				4900787722BF5B8600FC345D /* HomeRouter.swift in Sources */,
 				CF7CB28822B9F5970075A83C /* RootRouter.swift in Sources */,
+				CFCE582E22C66DC100309892 /* CircleGaugeView.swift in Sources */,
 				CFA7954E22BA391F00C55FFB /* TimeGaugeCell.swift in Sources */,
 				CFA7955122BB232A00C55FFB /* Util.swift in Sources */,
 				4900787022BF5B8600FC345D /* HomeViewOutput.swift in Sources */,
@@ -806,7 +810,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6UY7B6KRDJ;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = LifeGauge/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -825,7 +829,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6UY7B6KRDJ;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = LifeGauge/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
