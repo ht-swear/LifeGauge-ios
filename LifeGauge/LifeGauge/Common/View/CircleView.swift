@@ -61,6 +61,9 @@ class CircleView: UIView
         // Invoke super
         super.init(frame: frame)
         
+        // Set clips to bounds
+        self.clipsToBounds = true
+        
         // Create menu view
         let width = frame.width
         let height = frame.height

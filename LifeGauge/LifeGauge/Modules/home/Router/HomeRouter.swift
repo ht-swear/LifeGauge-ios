@@ -14,8 +14,9 @@ class HomeRouter: HomeRouterInput
     
     static func assembleModule() -> UIViewController?
     {
-        guard let navigation = UIStoryboard(name: "Main", bundle: nil).instantiateInitialViewController() as? UINavigationController else { return nil }
-        guard let view = navigation.topViewController as? HomeViewController else { return navigation }
+        //guard let navigation = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "homeViewControllerNav") as? UINavigationController else { return nil }
+        //guard let view = navigation.topViewController as? HomeViewController else { return nil }
+        guard let view = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "homeViewController") as? HomeViewController else { return nil }
         let presenter = HomePresenter()
         let interactor = HomeInteractor()
         let router = HomeRouter()
@@ -28,6 +29,6 @@ class HomeRouter: HomeRouterInput
         
         interactor.output = presenter
         router.viewController = view
-        return navigation
+        return view
     }
 }

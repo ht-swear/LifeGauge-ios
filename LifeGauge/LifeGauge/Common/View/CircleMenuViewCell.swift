@@ -14,6 +14,10 @@ protocol CircleMenuViewCellDelegate {
 
 class CircleMenuViewCell: UIView
 {
+    // Static
+    static let recoginizerName = "CircleMenuViewCellRecognizer"
+    
+    // Property
     var radian: Double?
     
     var delegate: CircleMenuViewCellDelegate?
@@ -26,6 +30,7 @@ class CircleMenuViewCell: UIView
         // Add tap gesture recognizer
         self.isUserInteractionEnabled = true
         let recognizer = UITapGestureRecognizer(target: self, action: #selector(tapAction))
+        recognizer.name = CircleMenuViewCell.recoginizerName
         self.addGestureRecognizer(recognizer)
     }
     

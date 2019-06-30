@@ -14,7 +14,7 @@ class RootRouter
     {
         guard let window = window else { return }
         window.makeKeyAndVisible()
-        window.rootViewController = HomeRouter.assembleModule()
+        window.rootViewController = PageRouter.assembleModule()
     }
 }
 

@@ -41,6 +41,33 @@
 		CFCE583422C7AE4C00309892 /* CircleMenuViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCE583022C7AE4C00309892 /* CircleMenuViewCell.swift */; };
 		CFCE583522C7AE4C00309892 /* CircleViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCE583122C7AE4C00309892 /* CircleViewCell.swift */; };
 		CFCE583622C7AE4C00309892 /* CircleMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCE583222C7AE4C00309892 /* CircleMenuView.swift */; };
+		CFCE583722C855D200309892 /* PageViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89493744CB33DEB237DF4B73 /* PageViewInput.swift */; };
+		CFCE583822C855D200309892 /* PageViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD31C2EFB70A45271B4B853 /* PageViewOutput.swift */; };
+		CFCE583922C855D200309892 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D5B67EF9532BAEEA5E4B12 /* PageViewController.swift */; };
+		CFCE583A22C855D700309892 /* PagePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280863B213A3CE4DF7B800A0 /* PagePresenter.swift */; };
+		CFCE583B22C855DC00309892 /* PageInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = B255EDB5AA6878E92B1F1446 /* PageInteractorInput.swift */; };
+		CFCE583C22C855DC00309892 /* PageInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CADF6BC1C4F460E05DD1A4D /* PageInteractorOutput.swift */; };
+		CFCE583D22C855DC00309892 /* PageInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D816BBF7526FBE50032A5D9 /* PageInteractor.swift */; };
+		CFCE583E22C855E300309892 /* PageRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED36EAFB714D849CC5640B55 /* PageRouterInput.swift */; };
+		CFCE583F22C855E300309892 /* PageRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B77A1029C50BC3D491943A /* PageRouter.swift */; };
+		CFCE584022C85B9400309892 /* StoreViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7755161262F5FED249F24DF6 /* StoreViewInput.swift */; };
+		CFCE584122C85B9400309892 /* StoreViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E7000E8853AF9AE016DB0F /* StoreViewOutput.swift */; };
+		CFCE584222C85B9400309892 /* StoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2142A8CC3620E6B034348857 /* StoreViewController.swift */; };
+		CFCE584322C85B9B00309892 /* StorePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89883237F82D64C35E04ADC4 /* StorePresenter.swift */; };
+		CFCE584422C85BA200309892 /* StoreInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4EC29D375B2FC34B525C70F /* StoreInteractorInput.swift */; };
+		CFCE584522C85BA200309892 /* StoreInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B16527B9C6CE52D409ABBA8 /* StoreInteractorOutput.swift */; };
+		CFCE584622C85BA200309892 /* StoreInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEC834E4F3693CE7097674C /* StoreInteractor.swift */; };
+		CFCE584722C85BA800309892 /* StoreRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC85EB551828069DC176C8A /* StoreRouterInput.swift */; };
+		CFCE584822C85BA800309892 /* StoreRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC025F96BD5206F4D6A75745 /* StoreRouter.swift */; };
+		CFCE584922C85BB100309892 /* CreateGaugeViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9000EB0C3695A4F9A7E48BC /* CreateGaugeViewInput.swift */; };
+		CFCE584A22C85BB100309892 /* CreateGaugeViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A24E53C9B2CB96411FA3F1 /* CreateGaugeViewOutput.swift */; };
+		CFCE584B22C85BB100309892 /* CreateGaugeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E6501D00F6220646F09B376 /* CreateGaugeViewController.swift */; };
+		CFCE584C22C85BB500309892 /* CreateGaugePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630CEF8448300AA1A01B0407 /* CreateGaugePresenter.swift */; };
+		CFCE584D22C85BBB00309892 /* CreateGaugeInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = A979DFEB79ABACE0E0347FD2 /* CreateGaugeInteractorInput.swift */; };
+		CFCE584E22C85BBB00309892 /* CreateGaugeInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38866CBBF0C13CC0AACE88F /* CreateGaugeInteractorOutput.swift */; };
+		CFCE584F22C85BBB00309892 /* CreateGaugeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C53EFC09D75993B031B323B /* CreateGaugeInteractor.swift */; };
+		CFCE585022C85BC000309892 /* CreateGaugeRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0873CD8F8315D2D41871271 /* CreateGaugeRouterInput.swift */; };
+		CFCE585122C85BC000309892 /* CreateGaugeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A30DD28C97B9DAD75D7F48A /* CreateGaugeRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,12 +88,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		06045D68F025B95E9D70AE9D /* PageRouterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PageRouterTests.swift; path = Page/Router/PageRouterTests.swift; sourceTree = "<group>"; };
+		0CC85EB551828069DC176C8A /* StoreRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StoreRouterInput.swift; path = Store/Router/StoreRouterInput.swift; sourceTree = "<group>"; };
 		1958CDB82FB22E8B54DCD864 /* Pods_LifeGaugeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LifeGaugeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		19A6A13E8CC5C3C33FCB9584 /* Pods_LifeGauge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LifeGauge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2142A8CC3620E6B034348857 /* StoreViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StoreViewController.swift; path = Store/View/StoreViewController.swift; sourceTree = "<group>"; };
 		215D6DBAAE4B92524B9FFD07 /* Pods-LifeGaugeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LifeGaugeTests.debug.xcconfig"; path = "Target Support Files/Pods-LifeGaugeTests/Pods-LifeGaugeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		250279D2D1A2E4E1DE84FE76 /* PageViewTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PageViewTests.swift; path = Page/View/PageViewTests.swift; sourceTree = "<group>"; };
+		27B77A1029C50BC3D491943A /* PageRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PageRouter.swift; path = Page/Router/PageRouter.swift; sourceTree = "<group>"; };
+		280863B213A3CE4DF7B800A0 /* PagePresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PagePresenter.swift; path = Page/Presenter/PagePresenter.swift; sourceTree = "<group>"; };
 		29B4590FADDEFB4AC6B1CB71 /* homeConfiguratorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = homeConfiguratorTests.swift; path = home/Configurator/homeConfiguratorTests.swift; sourceTree = "<group>"; };
+		2CADF6BC1C4F460E05DD1A4D /* PageInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PageInteractorOutput.swift; path = Page/Interactor/PageInteractorOutput.swift; sourceTree = "<group>"; };
 		417AE76E5D3131AA7E9BD340 /* Pods-LifeGauge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LifeGauge.debug.xcconfig"; path = "Target Support Files/Pods-LifeGauge/Pods-LifeGauge.debug.xcconfig"; sourceTree = "<group>"; };
 		4414737413464D8B8B4474A1 /* homeRouterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = homeRouterTests.swift; path = home/Router/homeRouterTests.swift; sourceTree = "<group>"; };
+		44D5B67EF9532BAEEA5E4B12 /* PageViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PageViewController.swift; path = Page/View/PageViewController.swift; sourceTree = "<group>"; };
+		44E7000E8853AF9AE016DB0F /* StoreViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StoreViewOutput.swift; path = Store/View/StoreViewOutput.swift; sourceTree = "<group>"; };
 		4900786222BF5B8500FC345D /* HomePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
 		4900786422BF5B8500FC345D /* HomeViewOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewOutput.swift; sourceTree = "<group>"; };
 		4900786522BF5B8500FC345D /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -96,11 +132,33 @@
 		49DA776522BBEDBC00E32A9D /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		49EFED4222C738BD00652D75 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		5FB32A73ACCF49C7680D2691 /* homeInteractorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = homeInteractorTests.swift; path = home/Interactor/homeInteractorTests.swift; sourceTree = "<group>"; };
+		630CEF8448300AA1A01B0407 /* CreateGaugePresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CreateGaugePresenter.swift; path = CreateGauge/Presenter/CreateGaugePresenter.swift; sourceTree = "<group>"; };
+		6459FDED1FBDA38DE10F8BD5 /* StoreRouterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StoreRouterTests.swift; path = Store/Router/StoreRouterTests.swift; sourceTree = "<group>"; };
+		6FC43B3C344030D50CBEF07E /* CreateGaugeRouterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CreateGaugeRouterTests.swift; path = CreateGauge/Router/CreateGaugeRouterTests.swift; sourceTree = "<group>"; };
 		72FC52114F7AD8F5C6ACB753 /* Pods-LifeGaugeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LifeGaugeTests.release.xcconfig"; path = "Target Support Files/Pods-LifeGaugeTests/Pods-LifeGaugeTests.release.xcconfig"; sourceTree = "<group>"; };
+		7755161262F5FED249F24DF6 /* StoreViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StoreViewInput.swift; path = Store/View/StoreViewInput.swift; sourceTree = "<group>"; };
+		7D816BBF7526FBE50032A5D9 /* PageInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PageInteractor.swift; path = Page/Interactor/PageInteractor.swift; sourceTree = "<group>"; };
 		837C8F35677525B7791202B2 /* Pods-LifeGaugeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LifeGaugeUITests.release.xcconfig"; path = "Target Support Files/Pods-LifeGaugeUITests/Pods-LifeGaugeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		89493744CB33DEB237DF4B73 /* PageViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PageViewInput.swift; path = Page/View/PageViewInput.swift; sourceTree = "<group>"; };
+		89883237F82D64C35E04ADC4 /* StorePresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StorePresenter.swift; path = Store/Presenter/StorePresenter.swift; sourceTree = "<group>"; };
+		8B16527B9C6CE52D409ABBA8 /* StoreInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StoreInteractorOutput.swift; path = Store/Interactor/StoreInteractorOutput.swift; sourceTree = "<group>"; };
+		8E6501D00F6220646F09B376 /* CreateGaugeViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CreateGaugeViewController.swift; path = CreateGauge/View/CreateGaugeViewController.swift; sourceTree = "<group>"; };
+		96CA5EE660944B40E92CBF85 /* CreateGaugeViewTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CreateGaugeViewTests.swift; path = CreateGauge/View/CreateGaugeViewTests.swift; sourceTree = "<group>"; };
+		9A30DD28C97B9DAD75D7F48A /* CreateGaugeRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CreateGaugeRouter.swift; path = CreateGauge/Router/CreateGaugeRouter.swift; sourceTree = "<group>"; };
+		9C53EFC09D75993B031B323B /* CreateGaugeInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CreateGaugeInteractor.swift; path = CreateGauge/Interactor/CreateGaugeInteractor.swift; sourceTree = "<group>"; };
+		A1A24E53C9B2CB96411FA3F1 /* CreateGaugeViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CreateGaugeViewOutput.swift; path = CreateGauge/View/CreateGaugeViewOutput.swift; sourceTree = "<group>"; };
+		A3CDDE6DC8374C8DA4959F94 /* PagePresenterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PagePresenterTests.swift; path = Page/Presenter/PagePresenterTests.swift; sourceTree = "<group>"; };
+		A979DFEB79ABACE0E0347FD2 /* CreateGaugeInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CreateGaugeInteractorInput.swift; path = CreateGauge/Interactor/CreateGaugeInteractorInput.swift; sourceTree = "<group>"; };
+		AAD31C2EFB70A45271B4B853 /* PageViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PageViewOutput.swift; path = Page/View/PageViewOutput.swift; sourceTree = "<group>"; };
+		ACEC834E4F3693CE7097674C /* StoreInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StoreInteractor.swift; path = Store/Interactor/StoreInteractor.swift; sourceTree = "<group>"; };
+		B255EDB5AA6878E92B1F1446 /* PageInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PageInteractorInput.swift; path = Page/Interactor/PageInteractorInput.swift; sourceTree = "<group>"; };
+		B38866CBBF0C13CC0AACE88F /* CreateGaugeInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CreateGaugeInteractorOutput.swift; path = CreateGauge/Interactor/CreateGaugeInteractorOutput.swift; sourceTree = "<group>"; };
 		B4E3BD34BB1B49BED60B032E /* homePresenterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = homePresenterTests.swift; path = home/Presenter/homePresenterTests.swift; sourceTree = "<group>"; };
+		C0873CD8F8315D2D41871271 /* CreateGaugeRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CreateGaugeRouterInput.swift; path = CreateGauge/Router/CreateGaugeRouterInput.swift; sourceTree = "<group>"; };
+		C3AF4093B834628078E712BB /* StorePresenterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StorePresenterTests.swift; path = Store/Presenter/StorePresenterTests.swift; sourceTree = "<group>"; };
 		C6AC78C4F462F3DCCB367A58 /* homeViewTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = homeViewTests.swift; path = home/View/homeViewTests.swift; sourceTree = "<group>"; };
 		CE663B0540E4C469446AE3B1 /* Pods-LifeGauge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LifeGauge.release.xcconfig"; path = "Target Support Files/Pods-LifeGauge/Pods-LifeGauge.release.xcconfig"; sourceTree = "<group>"; };
+		CE8A933A42B9EEA86868CDED /* CreateGaugePresenterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CreateGaugePresenterTests.swift; path = CreateGauge/Presenter/CreateGaugePresenterTests.swift; sourceTree = "<group>"; };
 		CF7CB28522B8B1110075A83C /* TimeGauge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeGauge.swift; sourceTree = "<group>"; };
 		CF7CB28722B9F5970075A83C /* RootRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootRouter.swift; sourceTree = "<group>"; };
 		CFA7954C22BA391F00C55FFB /* TimeGaugeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeGaugeCell.swift; sourceTree = "<group>"; };
@@ -110,8 +168,16 @@
 		CFCE583022C7AE4C00309892 /* CircleMenuViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleMenuViewCell.swift; sourceTree = "<group>"; };
 		CFCE583122C7AE4C00309892 /* CircleViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleViewCell.swift; sourceTree = "<group>"; };
 		CFCE583222C7AE4C00309892 /* CircleMenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleMenuView.swift; sourceTree = "<group>"; };
+		D1DD72887C32F77213079DF0 /* PageInteractorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PageInteractorTests.swift; path = Page/Interactor/PageInteractorTests.swift; sourceTree = "<group>"; };
 		D865F5BBEC1C78615141C6CA /* Pods-LifeGaugeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LifeGaugeUITests.debug.xcconfig"; path = "Target Support Files/Pods-LifeGaugeUITests/Pods-LifeGaugeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D9000EB0C3695A4F9A7E48BC /* CreateGaugeViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CreateGaugeViewInput.swift; path = CreateGauge/View/CreateGaugeViewInput.swift; sourceTree = "<group>"; };
 		DA4309DE900C503D87DA6A25 /* Pods_LifeGaugeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LifeGaugeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4EC29D375B2FC34B525C70F /* StoreInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StoreInteractorInput.swift; path = Store/Interactor/StoreInteractorInput.swift; sourceTree = "<group>"; };
+		EA02BE8F822C41FCDDC61739 /* CreateGaugeInteractorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CreateGaugeInteractorTests.swift; path = CreateGauge/Interactor/CreateGaugeInteractorTests.swift; sourceTree = "<group>"; };
+		EC025F96BD5206F4D6A75745 /* StoreRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StoreRouter.swift; path = Store/Router/StoreRouter.swift; sourceTree = "<group>"; };
+		ED36EAFB714D849CC5640B55 /* PageRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PageRouterInput.swift; path = Page/Router/PageRouterInput.swift; sourceTree = "<group>"; };
+		F67C19DD9582BFFFF5F89517 /* StoreViewTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StoreViewTests.swift; path = Store/View/StoreViewTests.swift; sourceTree = "<group>"; };
+		FA61D7C696615B0A69BC2FC2 /* StoreInteractorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StoreInteractorTests.swift; path = Store/Interactor/StoreInteractorTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +208,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0007D3FC67A77670B968205A /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				6FC43B3C344030D50CBEF07E /* CreateGaugeRouterTests.swift */,
+			);
+			name = Router;
+			sourceTree = "<group>";
+		};
+		0632EB4B6A25EEDC6DC6803A /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				D1DD72887C32F77213079DF0 /* PageInteractorTests.swift */,
+			);
+			name = Interactor;
+			sourceTree = "<group>";
+		};
 		1905B73A2D026EBC1D2AF4E8 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -155,12 +237,48 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		1CF11FD4E0B52D3AC4E05032 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				ED36EAFB714D849CC5640B55 /* PageRouterInput.swift */,
+				27B77A1029C50BC3D491943A /* PageRouter.swift */,
+			);
+			name = Router;
+			sourceTree = "<group>";
+		};
+		2180BB7FAF6BA00A6AC6B596 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				C3AF4093B834628078E712BB /* StorePresenterTests.swift */,
+			);
+			name = Presenter;
+			sourceTree = "<group>";
+		};
 		2235F766D09DF073ADF665CC /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
 				B4E3BD34BB1B49BED60B032E /* homePresenterTests.swift */,
 			);
 			name = Presenter;
+			sourceTree = "<group>";
+		};
+		2B2F427F04474FFB3AEA667A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				96CA5EE660944B40E92CBF85 /* CreateGaugeViewTests.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		2E3533AF0403F1E0E81BB4E1 /* CreateGauge */ = {
+			isa = PBXGroup;
+			children = (
+				2B2F427F04474FFB3AEA667A /* View */,
+				897A944512B38B9D98898F10 /* Interactor */,
+				E45576CEDAF82B37FF536423 /* Presenter */,
+				0007D3FC67A77670B968205A /* Router */,
+			);
+			name = CreateGauge;
 			sourceTree = "<group>";
 		};
 		4900784622BF59B100FC345D /* Recovered References */ = {
@@ -287,6 +405,9 @@
 			isa = PBXGroup;
 			children = (
 				5E193684048C9B5820E7F141 /* home */,
+				8642E40F883FC8C18990E3C6 /* Page */,
+				B59658B7B769711090243986 /* Store */,
+				2E3533AF0403F1E0E81BB4E1 /* CreateGauge */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -294,10 +415,23 @@
 		4930C28722B7649600DE2162 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				4900786022BF5B8500FC345D /* Home */,
 				CF7CB28722B9F5970075A83C /* RootRouter.swift */,
+				4900786022BF5B8500FC345D /* Home */,
+				D2FEF0C706985D66D408481B /* Page */,
+				8A8A7E4C6B3A06BF22015C6F /* Store */,
+				E65A1E9A89CCB417125D8AD5 /* CreateGauge */,
 			);
 			path = Modules;
+			sourceTree = "<group>";
+		};
+		534673140D40EE97A9DBDF99 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D9000EB0C3695A4F9A7E48BC /* CreateGaugeViewInput.swift */,
+				A1A24E53C9B2CB96411FA3F1 /* CreateGaugeViewOutput.swift */,
+				8E6501D00F6220646F09B376 /* CreateGaugeViewController.swift */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 		5E193684048C9B5820E7F141 /* home */ = {
@@ -322,12 +456,139 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		6D3FEF71FB93D463FA00E327 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				0CC85EB551828069DC176C8A /* StoreRouterInput.swift */,
+				EC025F96BD5206F4D6A75745 /* StoreRouter.swift */,
+			);
+			name = Router;
+			sourceTree = "<group>";
+		};
 		7357BF0532C3BEA60FECE77F /* Configurator */ = {
 			isa = PBXGroup;
 			children = (
 				29B4590FADDEFB4AC6B1CB71 /* homeConfiguratorTests.swift */,
 			);
 			name = Configurator;
+			sourceTree = "<group>";
+		};
+		7870E4E868F2BBAFB484B13A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				89493744CB33DEB237DF4B73 /* PageViewInput.swift */,
+				AAD31C2EFB70A45271B4B853 /* PageViewOutput.swift */,
+				44D5B67EF9532BAEEA5E4B12 /* PageViewController.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		8296FE80DD8C2B644DB14569 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				A3CDDE6DC8374C8DA4959F94 /* PagePresenterTests.swift */,
+			);
+			name = Presenter;
+			sourceTree = "<group>";
+		};
+		82F6D800674E81589E730B6E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F67C19DD9582BFFFF5F89517 /* StoreViewTests.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		8642E40F883FC8C18990E3C6 /* Page */ = {
+			isa = PBXGroup;
+			children = (
+				DD1C1734A1AB8EEA836EE59F /* View */,
+				0632EB4B6A25EEDC6DC6803A /* Interactor */,
+				8296FE80DD8C2B644DB14569 /* Presenter */,
+				ED763853655222FEA30B54A1 /* Router */,
+			);
+			name = Page;
+			sourceTree = "<group>";
+		};
+		897A944512B38B9D98898F10 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				EA02BE8F822C41FCDDC61739 /* CreateGaugeInteractorTests.swift */,
+			);
+			name = Interactor;
+			sourceTree = "<group>";
+		};
+		8A8A7E4C6B3A06BF22015C6F /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				8F0FECF957BB43E75FB6D7B3 /* View */,
+				9D93495F7560667DBC77596C /* Presenter */,
+				F4F1B5C8D18752B77B2EFEE2 /* Interactor */,
+				6D3FEF71FB93D463FA00E327 /* Router */,
+			);
+			name = Store;
+			sourceTree = "<group>";
+		};
+		8F0FECF957BB43E75FB6D7B3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7755161262F5FED249F24DF6 /* StoreViewInput.swift */,
+				44E7000E8853AF9AE016DB0F /* StoreViewOutput.swift */,
+				2142A8CC3620E6B034348857 /* StoreViewController.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		90D936E239E4B3ED196ED9C1 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				630CEF8448300AA1A01B0407 /* CreateGaugePresenter.swift */,
+			);
+			name = Presenter;
+			sourceTree = "<group>";
+		};
+		94D4CDB6C6635839E8822180 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				FA61D7C696615B0A69BC2FC2 /* StoreInteractorTests.swift */,
+			);
+			name = Interactor;
+			sourceTree = "<group>";
+		};
+		9D107A1D9941B6D804735352 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				280863B213A3CE4DF7B800A0 /* PagePresenter.swift */,
+			);
+			name = Presenter;
+			sourceTree = "<group>";
+		};
+		9D93495F7560667DBC77596C /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				89883237F82D64C35E04ADC4 /* StorePresenter.swift */,
+			);
+			name = Presenter;
+			sourceTree = "<group>";
+		};
+		AE52758798F35BB9E6224532 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				C0873CD8F8315D2D41871271 /* CreateGaugeRouterInput.swift */,
+				9A30DD28C97B9DAD75D7F48A /* CreateGaugeRouter.swift */,
+			);
+			name = Router;
+			sourceTree = "<group>";
+		};
+		B59658B7B769711090243986 /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				82F6D800674E81589E730B6E /* View */,
+				94D4CDB6C6635839E8822180 /* Interactor */,
+				2180BB7FAF6BA00A6AC6B596 /* Presenter */,
+				D2FA66639AF438310265C4C8 /* Router */,
+			);
+			name = Store;
 			sourceTree = "<group>";
 		};
 		CF2142C102B04E0D6F2AEB27 /* Interactor */ = {
@@ -367,6 +628,25 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		D2FA66639AF438310265C4C8 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				6459FDED1FBDA38DE10F8BD5 /* StoreRouterTests.swift */,
+			);
+			name = Router;
+			sourceTree = "<group>";
+		};
+		D2FEF0C706985D66D408481B /* Page */ = {
+			isa = PBXGroup;
+			children = (
+				7870E4E868F2BBAFB484B13A /* View */,
+				9D107A1D9941B6D804735352 /* Presenter */,
+				FCD454C9DAF7FA88BF22943E /* Interactor */,
+				1CF11FD4E0B52D3AC4E05032 /* Router */,
+			);
+			name = Page;
+			sourceTree = "<group>";
+		};
 		D35C5C0C0116F2409822826F /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -381,6 +661,71 @@
 				4414737413464D8B8B4474A1 /* homeRouterTests.swift */,
 			);
 			name = Router;
+			sourceTree = "<group>";
+		};
+		DD1C1734A1AB8EEA836EE59F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				250279D2D1A2E4E1DE84FE76 /* PageViewTests.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		E45576CEDAF82B37FF536423 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				CE8A933A42B9EEA86868CDED /* CreateGaugePresenterTests.swift */,
+			);
+			name = Presenter;
+			sourceTree = "<group>";
+		};
+		E65A1E9A89CCB417125D8AD5 /* CreateGauge */ = {
+			isa = PBXGroup;
+			children = (
+				534673140D40EE97A9DBDF99 /* View */,
+				90D936E239E4B3ED196ED9C1 /* Presenter */,
+				F919AB1362ED9C0649D0C601 /* Interactor */,
+				AE52758798F35BB9E6224532 /* Router */,
+			);
+			name = CreateGauge;
+			sourceTree = "<group>";
+		};
+		ED763853655222FEA30B54A1 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				06045D68F025B95E9D70AE9D /* PageRouterTests.swift */,
+			);
+			name = Router;
+			sourceTree = "<group>";
+		};
+		F4F1B5C8D18752B77B2EFEE2 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				E4EC29D375B2FC34B525C70F /* StoreInteractorInput.swift */,
+				8B16527B9C6CE52D409ABBA8 /* StoreInteractorOutput.swift */,
+				ACEC834E4F3693CE7097674C /* StoreInteractor.swift */,
+			);
+			name = Interactor;
+			sourceTree = "<group>";
+		};
+		F919AB1362ED9C0649D0C601 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				A979DFEB79ABACE0E0347FD2 /* CreateGaugeInteractorInput.swift */,
+				B38866CBBF0C13CC0AACE88F /* CreateGaugeInteractorOutput.swift */,
+				9C53EFC09D75993B031B323B /* CreateGaugeInteractor.swift */,
+			);
+			name = Interactor;
+			sourceTree = "<group>";
+		};
+		FCD454C9DAF7FA88BF22943E /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				B255EDB5AA6878E92B1F1446 /* PageInteractorInput.swift */,
+				2CADF6BC1C4F460E05DD1A4D /* PageInteractorOutput.swift */,
+				7D816BBF7526FBE50032A5D9 /* PageInteractor.swift */,
+			);
+			name = Interactor;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -626,25 +971,52 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFCE583822C855D200309892 /* PageViewOutput.swift in Sources */,
 				CFCE583522C7AE4C00309892 /* CircleViewCell.swift in Sources */,
+				CFCE584222C85B9400309892 /* StoreViewController.swift in Sources */,
+				CFCE583A22C855D700309892 /* PagePresenter.swift in Sources */,
 				4900787422BF5B8600FC345D /* HomeInteractorInput.swift in Sources */,
+				CFCE583B22C855DC00309892 /* PageInteractorInput.swift in Sources */,
+				CFCE583722C855D200309892 /* PageViewInput.swift in Sources */,
+				CFCE584422C85BA200309892 /* StoreInteractorInput.swift in Sources */,
 				4900787222BF5B8600FC345D /* HomeViewInput.swift in Sources */,
 				4900787622BF5B8600FC345D /* HomeRouterInput.swift in Sources */,
 				4900786F22BF5B8600FC345D /* HomePresenter.swift in Sources */,
+				CFCE583D22C855DC00309892 /* PageInteractor.swift in Sources */,
 				4900787722BF5B8600FC345D /* HomeRouter.swift in Sources */,
+				CFCE584922C85BB100309892 /* CreateGaugeViewInput.swift in Sources */,
+				CFCE584F22C85BBB00309892 /* CreateGaugeInteractor.swift in Sources */,
+				CFCE584D22C85BBB00309892 /* CreateGaugeInteractorInput.swift in Sources */,
+				CFCE584B22C85BB100309892 /* CreateGaugeViewController.swift in Sources */,
+				CFCE583E22C855E300309892 /* PageRouterInput.swift in Sources */,
+				CFCE584022C85B9400309892 /* StoreViewInput.swift in Sources */,
 				CF7CB28822B9F5970075A83C /* RootRouter.swift in Sources */,
 				CFCE583422C7AE4C00309892 /* CircleMenuViewCell.swift in Sources */,
+				CFCE585022C85BC000309892 /* CreateGaugeRouterInput.swift in Sources */,
 				CFA7954E22BA391F00C55FFB /* TimeGaugeCell.swift in Sources */,
+				CFCE584822C85BA800309892 /* StoreRouter.swift in Sources */,
 				CFA7955122BB232A00C55FFB /* Util.swift in Sources */,
 				CFCE583322C7AE4C00309892 /* CircleView.swift in Sources */,
+				CFCE583F22C855E300309892 /* PageRouter.swift in Sources */,
+				CFCE584322C85B9B00309892 /* StorePresenter.swift in Sources */,
+				CFCE583922C855D200309892 /* PageViewController.swift in Sources */,
+				CFCE584622C85BA200309892 /* StoreInteractor.swift in Sources */,
+				CFCE585122C85BC000309892 /* CreateGaugeRouter.swift in Sources */,
+				CFCE584522C85BA200309892 /* StoreInteractorOutput.swift in Sources */,
 				4900787022BF5B8600FC345D /* HomeViewOutput.swift in Sources */,
+				CFCE584122C85B9400309892 /* StoreViewOutput.swift in Sources */,
 				4900787522BF5B8600FC345D /* HomeInteractor.swift in Sources */,
+				CFCE584E22C85BBB00309892 /* CreateGaugeInteractorOutput.swift in Sources */,
+				CFCE584C22C85BB500309892 /* CreateGaugePresenter.swift in Sources */,
+				CFCE584A22C85BB100309892 /* CreateGaugeViewOutput.swift in Sources */,
 				4900787322BF5B8600FC345D /* HomeInteractorOutput.swift in Sources */,
 				4900787122BF5B8600FC345D /* HomeViewController.swift in Sources */,
 				CF7CB28622B8B1110075A83C /* TimeGauge.swift in Sources */,
 				4930C24E22B7566300DE2162 /* AppDelegate.swift in Sources */,
 				CFCE583622C7AE4C00309892 /* CircleMenuView.swift in Sources */,
+				CFCE583C22C855DC00309892 /* PageInteractorOutput.swift in Sources */,
 				49DA776622BBEDBC00E32A9D /* R.generated.swift in Sources */,
+				CFCE584722C85BA800309892 /* StoreRouterInput.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

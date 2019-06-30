@@ -71,7 +71,47 @@ class CircleMenuView: UIView
         
         // Create innerView
         innerView = UIView(frame: CGRect(x: 16, y: 16, width: frame.width - 32, height: frame.width - 32))
+        innerView.isUserInteractionEnabled = true
+        
+        // Add long tap gesture
+        let recognizer = UILongPressGestureRecognizer(target: self, action: #selector(longPressGesture(_:)))
+        recognizer.minimumPressDuration = 0.0
+        recognizer.delegate = self
+        innerView.addGestureRecognizer(recognizer)
         addSubview(innerView)
+    }
+    
+    @objc private func longPressGesture(_ recognizer: UILongPressGestureRecognizer)
+    {
+        switch recognizer.state {
+        case .began:
+            startPos = recognizer.location(in: innerView)
+        case .changed:
+            endPos = recognizer.location(in: innerView)
+            
+            // Calcualate radian
+            guard let diffRadian = calculateDiffRadian(from: startPos, to: endPos) else { return }
+            updateCircleItemsPos(with: diffRadian, duration: 0.0)
+            
+            // Update location
+            startPos = endPos
+            endPos = nil
+        case .ended:
+            endPos = recognizer.location(in: innerView)
+            
+            // Calcualate radoam
+            guard let diffRadian = calculateDiffRadian(from: startPos, to: endPos) else { return }
+            updateCircleItemsPos(with: diffRadian, duration: 0.0)
+            
+            // Reset positions
+            startPos = nil
+            endPos = nil
+            
+            // Update circle item position to nearest point
+            guard let radian = calculateRadianFromNearestPoint() else { return }
+            updateCircleItemsPos(with: radian, duration: 0.1)
+        default: break
+        }
     }
     
     required init?(coder aDecoder: NSCoder)
@@ -91,60 +131,6 @@ class CircleMenuView: UIView
         }
         
         innerView.bringSubviewToFront(topCircleView)
-    }
-    
-    //------------------------------------------------------------//
-    // MARK: -- Touches --
-    //------------------------------------------------------------//
-    
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?)
-    {
-        // Invoke super
-        super.touchesBegan(touches, with: event)
-        
-        // Set start postion
-        guard let touch = touches.first else { return }
-        startPos = touch.location(in: innerView)
-    }
-    
-    override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?)
-    {
-        // Invoke super
-        super.touchesMoved(touches, with: event)
-        
-        // Set end position
-        guard let touch = touches.first else { return }
-        endPos = touch.location(in: innerView)
-        
-        // Calcualate radian
-        guard let diffRadian = calculateDiffRadian(from: startPos, to: endPos) else { return }
-        updateCircleItemsPos(with: diffRadian, duration: 0.0)
-        
-        // Update location
-        startPos = endPos
-        endPos = nil
-    }
-    
-    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?)
-    {
-        // Invoke super
-        super.touchesEnded(touches, with: event)
-        
-        // Set end postion
-        guard let touch = touches.first else { return }
-        endPos = touch.location(in: innerView)
-        
-        // Calcualate radoam
-        guard let diffRadian = calculateDiffRadian(from: startPos, to: endPos) else { return }
-        updateCircleItemsPos(with: diffRadian, duration: 0.0)
-        
-        // Reset positions
-        startPos = nil
-        endPos = nil
-        
-        // Update circle item position to nearest point
-        guard let radian = calculateRadianFromNearestPoint() else { return }
-        updateCircleItemsPos(with: radian, duration: 0.1)
     }
     
     //------------------------------------------------------------//
@@ -346,5 +332,15 @@ extension CircleMenuView: CircleMenuViewCellDelegate
         
         // Update circle items position with radian
         updateCircleItemsPos(with: diffRadian, duration: 0.2)
+    }
+}
+
+extension CircleMenuView: UIGestureRecognizerDelegate
+{
+    func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIGestureRecognizer) -> Bool
+    {
+        // Allow cell gesture only
+        return otherGestureRecognizer.name == CircleMenuViewCell.recoginizerName ? true : false
+        
     }
 }
