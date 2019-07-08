@@ -24,6 +24,7 @@
 		4930C26322B7566C00DE2162 /* LifeGaugeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4930C26222B7566C00DE2162 /* LifeGaugeTests.swift */; };
 		4930C26E22B7566C00DE2162 /* LifeGaugeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4930C26D22B7566C00DE2162 /* LifeGaugeUITests.swift */; };
 		49DA776622BBEDBC00E32A9D /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49DA776522BBEDBC00E32A9D /* R.generated.swift */; };
+		49EFED4322C738BD00652D75 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 49EFED4222C738BD00652D75 /* GoogleService-Info.plist */; };
 		6706184109770734DB36748B /* Pods_LifeGaugeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA4309DE900C503D87DA6A25 /* Pods_LifeGaugeTests.framework */; };
 		A488D6E519A5D29F078B050F /* Pods_LifeGaugeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1958CDB82FB22E8B54DCD864 /* Pods_LifeGaugeUITests.framework */; };
 		CF55413222B8ACBD00242B31 /* loginConfiguratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4930C28222B7649600DE2162 /* loginConfiguratorTests.swift */; };
@@ -36,7 +37,11 @@
 		CFA7954E22BA391F00C55FFB /* TimeGaugeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA7954C22BA391F00C55FFB /* TimeGaugeCell.swift */; };
 		CFA7954F22BA391F00C55FFB /* TimeGaugeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CFA7954D22BA391F00C55FFB /* TimeGaugeCell.xib */; };
 		CFA7955122BB232A00C55FFB /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA7955022BB232A00C55FFB /* Util.swift */; };
-		CFCE582E22C66DC100309892 /* CircleGaugeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCE582D22C66DC100309892 /* CircleGaugeView.swift */; };
+		CFCE583322C7AE4C00309892 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCE582F22C7AE4C00309892 /* CircleView.swift */; };
+		CFCE583422C7AE4C00309892 /* CircleMenuViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCE583022C7AE4C00309892 /* CircleMenuViewCell.swift */; };
+		CFCE583522C7AE4C00309892 /* CircleViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCE583122C7AE4C00309892 /* CircleViewCell.swift */; };
+		CFCE583622C7AE4C00309892 /* CircleMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCE583222C7AE4C00309892 /* CircleMenuView.swift */; };
+		CFE2725722D36F2400EE98C1 /* CircleGaugeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE2725622D36F2400EE98C1 /* CircleGaugeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +95,7 @@
 		4930C28422B7649600DE2162 /* loginInteractorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = loginInteractorTests.swift; sourceTree = "<group>"; };
 		4930C28622B7649600DE2162 /* loginRouterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = loginRouterTests.swift; sourceTree = "<group>"; };
 		49DA776522BBEDBC00E32A9D /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
+		49EFED4222C738BD00652D75 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		5FB32A73ACCF49C7680D2691 /* homeInteractorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = homeInteractorTests.swift; path = home/Interactor/homeInteractorTests.swift; sourceTree = "<group>"; };
 		72FC52114F7AD8F5C6ACB753 /* Pods-LifeGaugeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LifeGaugeTests.release.xcconfig"; path = "Target Support Files/Pods-LifeGaugeTests/Pods-LifeGaugeTests.release.xcconfig"; sourceTree = "<group>"; };
 		837C8F35677525B7791202B2 /* Pods-LifeGaugeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LifeGaugeUITests.release.xcconfig"; path = "Target Support Files/Pods-LifeGaugeUITests/Pods-LifeGaugeUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -101,7 +107,11 @@
 		CFA7954C22BA391F00C55FFB /* TimeGaugeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeGaugeCell.swift; sourceTree = "<group>"; };
 		CFA7954D22BA391F00C55FFB /* TimeGaugeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimeGaugeCell.xib; sourceTree = "<group>"; };
 		CFA7955022BB232A00C55FFB /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
-		CFCE582D22C66DC100309892 /* CircleGaugeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleGaugeView.swift; sourceTree = "<group>"; };
+		CFCE582F22C7AE4C00309892 /* CircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
+		CFCE583022C7AE4C00309892 /* CircleMenuViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleMenuViewCell.swift; sourceTree = "<group>"; };
+		CFCE583122C7AE4C00309892 /* CircleViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleViewCell.swift; sourceTree = "<group>"; };
+		CFCE583222C7AE4C00309892 /* CircleMenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleMenuView.swift; sourceTree = "<group>"; };
+		CFE2725622D36F2400EE98C1 /* CircleGaugeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleGaugeView.swift; sourceTree = "<group>"; };
 		D865F5BBEC1C78615141C6CA /* Pods-LifeGaugeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LifeGaugeUITests.debug.xcconfig"; path = "Target Support Files/Pods-LifeGaugeUITests/Pods-LifeGaugeUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		DA4309DE900C503D87DA6A25 /* Pods_LifeGaugeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LifeGaugeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -247,6 +257,7 @@
 				4930C25422B7566B00DE2162 /* Assets.xcassets */,
 				4930C25622B7566B00DE2162 /* LaunchScreen.storyboard */,
 				4930C25922B7566B00DE2162 /* Info.plist */,
+				49EFED4222C738BD00652D75 /* GoogleService-Info.plist */,
 				CFA7955222BDDCE500C55FFB /* Common */,
 				CF7CB28422B8B0D70075A83C /* Entities */,
 				4930C28722B7649600DE2162 /* Modules */,
@@ -348,9 +359,13 @@
 		CFA7955322BDDCF500C55FFB /* View */ = {
 			isa = PBXGroup;
 			children = (
+				CFE2725622D36F2400EE98C1 /* CircleGaugeView.swift */,
+				CFCE583222C7AE4C00309892 /* CircleMenuView.swift */,
+				CFCE583022C7AE4C00309892 /* CircleMenuViewCell.swift */,
+				CFCE582F22C7AE4C00309892 /* CircleView.swift */,
+				CFCE583122C7AE4C00309892 /* CircleViewCell.swift */,
 				CFA7954C22BA391F00C55FFB /* TimeGaugeCell.swift */,
 				CFA7954D22BA391F00C55FFB /* TimeGaugeCell.xib */,
-				CFCE582D22C66DC100309892 /* CircleGaugeView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -482,6 +497,7 @@
 			files = (
 				CFA7954F22BA391F00C55FFB /* TimeGaugeCell.xib in Resources */,
 				4930C25822B7566B00DE2162 /* LaunchScreen.storyboard in Resources */,
+				49EFED4322C738BD00652D75 /* GoogleService-Info.plist in Resources */,
 				4930C25522B7566B00DE2162 /* Assets.xcassets in Resources */,
 				4930C25322B7566300DE2162 /* Main.storyboard in Resources */,
 			);
@@ -613,21 +629,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFCE583522C7AE4C00309892 /* CircleViewCell.swift in Sources */,
 				4900787422BF5B8600FC345D /* HomeInteractorInput.swift in Sources */,
+				CFE2725722D36F2400EE98C1 /* CircleGaugeView.swift in Sources */,
 				4900787222BF5B8600FC345D /* HomeViewInput.swift in Sources */,
 				4900787622BF5B8600FC345D /* HomeRouterInput.swift in Sources */,
 				4900786F22BF5B8600FC345D /* HomePresenter.swift in Sources */,
 				4900787722BF5B8600FC345D /* HomeRouter.swift in Sources */,
 				CF7CB28822B9F5970075A83C /* RootRouter.swift in Sources */,
-				CFCE582E22C66DC100309892 /* CircleGaugeView.swift in Sources */,
+				CFCE583422C7AE4C00309892 /* CircleMenuViewCell.swift in Sources */,
 				CFA7954E22BA391F00C55FFB /* TimeGaugeCell.swift in Sources */,
 				CFA7955122BB232A00C55FFB /* Util.swift in Sources */,
+				CFCE583322C7AE4C00309892 /* CircleView.swift in Sources */,
 				4900787022BF5B8600FC345D /* HomeViewOutput.swift in Sources */,
 				4900787522BF5B8600FC345D /* HomeInteractor.swift in Sources */,
 				4900787322BF5B8600FC345D /* HomeInteractorOutput.swift in Sources */,
 				4900787122BF5B8600FC345D /* HomeViewController.swift in Sources */,
 				CF7CB28622B8B1110075A83C /* TimeGauge.swift in Sources */,
 				4930C24E22B7566300DE2162 /* AppDelegate.swift in Sources */,
+				CFCE583622C7AE4C00309892 /* CircleMenuView.swift in Sources */,
 				49DA776622BBEDBC00E32A9D /* R.generated.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -809,15 +829,17 @@
 			baseConfigurationReference = 417AE76E5D3131AA7E9BD340 /* Pods-LifeGauge.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = LifeGauge/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.htswear.lifeguage.ios.LifeGauge;
+				PRODUCT_BUNDLE_IDENTIFIER = io.htswear.LifeGauge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -828,15 +850,17 @@
 			baseConfigurationReference = CE663B0540E4C469446AE3B1 /* Pods-LifeGauge.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = LifeGauge/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.htswear.lifeguage.ios.LifeGauge;
+				PRODUCT_BUNDLE_IDENTIFIER = io.htswear.LifeGauge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
