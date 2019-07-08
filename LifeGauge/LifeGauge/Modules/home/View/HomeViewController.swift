@@ -42,8 +42,12 @@ class HomeViewController: UIViewController
         output.fetchTimeGauges()
         
         homeCollectionView.isHidden = true
-        let circleGauge = CircleGaugeView(frame: view.frame, from: .top, angleAmount: 270, thickenss: 32, backgoundColor: UIColor.darkGray)
-        circleGauge.backgroundColor = UIColor.white
+        let circleGauge = CircleGaugeView(frame: view.frame)
+        circleGauge.pos = .top
+        circleGauge.thickness = 20
+        circleGauge.angleAmount = 240
+        circleGauge.gaugeBackgroundColor = UIColor.lightGray
+        circleGauge.drawGauge()
         view.addSubview(circleGauge)
         
     }

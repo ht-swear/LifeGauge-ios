@@ -18,10 +18,10 @@ enum CirclePosition: CGFloat {
 class CircleGaugeView: UIView
 {
     // Property
-    private var pos: CirclePosition! = .top
-    private var angleAmount: Int! = 0
-    private var thickness: CGFloat! = 12
-    private var gaugeBackgroundColor: UIColor! = UIColor.black
+    public var pos: CirclePosition! = .top
+    public var angleAmount: Int! = 0
+    public var thickness: CGFloat! = 12
+    public var gaugeBackgroundColor: UIColor! = UIColor.black
     
     private var progressLabel: UILabel!
     
@@ -29,13 +29,12 @@ class CircleGaugeView: UIView
     // MARK: -- View --
     //------------------------------------------------------------//
     
-    init(frame: CGRect, from pos: CirclePosition, angleAmount: Int, thickenss: CGFloat, backgoundColor: UIColor)
+    override init(frame: CGRect)
     {
         // Invoke super
         super.init(frame: frame)
         
-        // Draw gauge
-        drawGauge(from: pos, angleAmount: angleAmount, thickenss: thickenss, backgoundColor: backgoundColor)
+        backgroundColor = UIColor.white
         
         // Create progress label
         progressLabel = UILabel()
@@ -45,10 +44,9 @@ class CircleGaugeView: UIView
         progressLabel.text = "\(Int(angleAmount*100/360)) %"
         
         // Calculate label size
-        let rect = progressLabel.sizeThatFits(CGSize(width: frame.width/2, height: frame.height/2))
-        let x = frame.width/2 - rect.width/2
-        let y = frame.height/2 - rect.height/2
-        progressLabel.frame = CGRect(x: x, y: y, width: rect.width, height: rect.height)
+        updateGauge()
+        
+        // Add sub view
         addSubview(progressLabel)
     }
     
@@ -61,12 +59,19 @@ class CircleGaugeView: UIView
     // MARK: -- View --
     //------------------------------------------------------------//
     
-    public func drawGauge(from pos: CirclePosition, angleAmount: Int, thickenss: CGFloat, backgoundColor: UIColor)
+    public func drawGauge()
     {
-        self.pos = pos
-        self.angleAmount = angleAmount
-        self.thickness = thickenss
-        self.gaugeBackgroundColor = backgoundColor
+        updateGauge()
+    }
+    
+    private func updateGauge()
+    {
+        progressLabel.text = "\(Int(angleAmount*100/360)) %"
+        
+        let rect = progressLabel.sizeThatFits(CGSize(width: frame.width/2, height: frame.height/2))
+        let x = frame.width/2 - rect.width/2
+        let y = frame.height/2 - rect.height/2
+        progressLabel.frame = CGRect(x: x, y: y, width: rect.width, height: rect.height)
         
         setNeedsDisplay()
     }
@@ -77,6 +82,7 @@ class CircleGaugeView: UIView
     
     override func draw(_ rect: CGRect)
     {
+        // Calculate params
         let center = CGPoint(x: frame.width/2, y: frame.height/2)
         let radius = min(frame.width/2, frame.height/2) - 64
         var startAngle = pos.rawValue
