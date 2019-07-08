@@ -33,26 +33,12 @@ class HomeViewController: UIViewController
         output.viewIsReady()
         output.fetchTimeGauges()
         
-        //let circleView = CircleMenuView(frame: CGRect(x: 0, y: view.frame.height - view.frame.width/2, width: view.frame.width, height: view.frame.width))
         circleView = CircleView(frame: view.frame)
         circleView?.delegate = self
         circleView?.dataSource = self
         view.addSubview(circleView!)
     }
-    
-    override func viewWillAppear(_ animated: Bool)
-    {
-        // Invoke super
-        super.viewWillAppear(animated)
-        
-        updateNavigationItem()
-    }
-    
-    private func updateNavigationItem()
-    {
-        let leftItem = UIBarButtonItem(barButtonSystemItem: .refresh, target: self, action: #selector(refreshAction))
-        self.navigationItem.leftBarButtonItem = leftItem
-    }
+
     
     //------------------------------------------------------------//
     // MARK: -- Action --
@@ -86,10 +72,17 @@ extension HomeViewController: HomeViewInput
 
 extension HomeViewController: CircleViewDataSource
 {
-    func circleView(_ circlView: CircleView, cellForRowAt index: Int) -> CircleViewCell
+    func circleView(_ circleView: CircleView, cellForRowAt index: Int) -> CircleViewCell
     {
-        let cell = circlView.dequeueCircleViewCell(for: index)
-        cell.backgroundColor = colors[safe: index]
+        let cell = circleView.dequeueCircleViewCell(for: index)
+        let circleGauge = CircleGaugeView(frame: cell.frame)
+        circleGauge.pos = .top
+        circleGauge.thickness = 20
+        circleGauge.angleAmount = 240
+        circleGauge.gaugeBackgroundColor = UIColor.lightGray
+        circleGauge.drawGauge()
+        cell.addSubview(circleGauge)
+        //cell.backgroundColor = colors[safe: index]
         return cell
     }
     
@@ -100,7 +93,7 @@ extension HomeViewController: CircleViewDataSource
     
     func circleMenuView(_ circleMenuView: CircleMenuView, cellForRowAt index: Int) -> CircleMenuViewCell
     {
-        let cell = circleMenuView.dequeueCircleItemView(for: index)
+        let cell = circleMenuView.dequeueCircleMenuViewCell(for: index)
         cell.backgroundColor = colors[safe: index]
         return cell
     }

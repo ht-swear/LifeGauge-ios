@@ -151,7 +151,7 @@ class CircleMenuView: UIView
     // MARK: -- Public methods --
     //------------------------------------------------------------//
     
-    public func dequeueCircleItemView(for index: Int) -> CircleMenuViewCell
+    public func dequeueCircleMenuViewCell(for index: Int) -> CircleMenuViewCell
     {
         // Calculate position with index
         let radian = Double.pi*2 / Double(numOfCircles) * Double(index)

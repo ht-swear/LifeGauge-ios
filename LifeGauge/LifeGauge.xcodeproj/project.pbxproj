@@ -41,6 +41,7 @@
 		CFCE583422C7AE4C00309892 /* CircleMenuViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCE583022C7AE4C00309892 /* CircleMenuViewCell.swift */; };
 		CFCE583522C7AE4C00309892 /* CircleViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCE583122C7AE4C00309892 /* CircleViewCell.swift */; };
 		CFCE583622C7AE4C00309892 /* CircleMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCE583222C7AE4C00309892 /* CircleMenuView.swift */; };
+		CFE2725722D36F2400EE98C1 /* CircleGaugeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE2725622D36F2400EE98C1 /* CircleGaugeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -110,6 +111,7 @@
 		CFCE583022C7AE4C00309892 /* CircleMenuViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleMenuViewCell.swift; sourceTree = "<group>"; };
 		CFCE583122C7AE4C00309892 /* CircleViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleViewCell.swift; sourceTree = "<group>"; };
 		CFCE583222C7AE4C00309892 /* CircleMenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleMenuView.swift; sourceTree = "<group>"; };
+		CFE2725622D36F2400EE98C1 /* CircleGaugeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleGaugeView.swift; sourceTree = "<group>"; };
 		D865F5BBEC1C78615141C6CA /* Pods-LifeGaugeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LifeGaugeUITests.debug.xcconfig"; path = "Target Support Files/Pods-LifeGaugeUITests/Pods-LifeGaugeUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		DA4309DE900C503D87DA6A25 /* Pods_LifeGaugeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LifeGaugeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -357,6 +359,7 @@
 		CFA7955322BDDCF500C55FFB /* View */ = {
 			isa = PBXGroup;
 			children = (
+				CFE2725622D36F2400EE98C1 /* CircleGaugeView.swift */,
 				CFCE583222C7AE4C00309892 /* CircleMenuView.swift */,
 				CFCE583022C7AE4C00309892 /* CircleMenuViewCell.swift */,
 				CFCE582F22C7AE4C00309892 /* CircleView.swift */,
@@ -628,6 +631,7 @@
 			files = (
 				CFCE583522C7AE4C00309892 /* CircleViewCell.swift in Sources */,
 				4900787422BF5B8600FC345D /* HomeInteractorInput.swift in Sources */,
+				CFE2725722D36F2400EE98C1 /* CircleGaugeView.swift in Sources */,
 				4900787222BF5B8600FC345D /* HomeViewInput.swift in Sources */,
 				4900787622BF5B8600FC345D /* HomeRouterInput.swift in Sources */,
 				4900786F22BF5B8600FC345D /* HomePresenter.swift in Sources */,
